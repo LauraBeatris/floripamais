@@ -13,7 +13,6 @@ class MyDocument extends Document {
           <meta title="Floripa+ | Torne a ilha em um lugar melhor" />
           <meta name="theme-color" content="#FFFFFF" />
           <meta name="description" content="Torne a ilha em um lugar melhor" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicons/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
