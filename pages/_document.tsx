@@ -10,6 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="pt" className="antialiased p-0 mx-0 outline-none box-border">
         <Head>
+          <meta name="description" content="Torne a ilha em um lugar melhor" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />
