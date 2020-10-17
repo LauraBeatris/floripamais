@@ -1,3 +1,5 @@
+const fallbackFonts = ["Arial", "sans-serif"];
+
 module.exports = {
   purge: [
     "./pages/*.{ts,tsx}",
@@ -12,7 +14,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Montserrat", "Arial", "sans-serif"],
+      semibold: ["Montserrat-SemiBold", ...fallbackFonts],
+      medium: ["Montserrat-Medium", ...fallbackFonts],
+      light: ["Montserrat-Light", ...fallbackFonts],
     },
   },
   variants: {},

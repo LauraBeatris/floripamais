@@ -3,7 +3,7 @@ import Head from "next/head";
 const App: React.FC = () => (
   <>
     <Head>
-      <title>Floripa+</title>
+      <title>Floripa+ | Torne a ilha em um lugar melhor</title>
     </Head>
     <main className="h-screen w-screen flex justify-center items-center bg-background-light">
       <h1 className="text-gray-900 text-3xl animate-pulse font-medium">
