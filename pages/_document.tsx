@@ -14,7 +14,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#FFFFFF" />
           <meta name="description" content="Torne a ilha em um lugar melhor" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
           <link rel="icon" href="/favicons/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
@@ -31,7 +30,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png" />
         </Head>
-        <body className="font-body">
+        <body>
           <Main />
           <NextScript />
         </body>

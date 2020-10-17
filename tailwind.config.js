@@ -12,7 +12,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Montserrat", "Arial", "sans-serif"],
+      semibold: ["Montserrat-SemiBold", "Arial", "sans-serif"],
+      medium: ["Montserrat-Medium", "Arial", "sans-serif"],
+      light: ["Montserrat-Light", "Arial", "sans-serif"],
     },
   },
   variants: {},
