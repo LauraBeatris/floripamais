@@ -77,7 +77,7 @@ SSG on this website since it's a simple page without dynamic data and the SEO it
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Go Barber](https://github.com/LauraBeatris/floripamais/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/LauraBeatris/floripamais/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Feel free to **file a new issue** with a respective title and description on the [Floripa+](https://github.com/LauraBeatris/floripamais/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/LauraBeatris/floripamais/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
 # :tada: Contributing
 
