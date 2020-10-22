@@ -16,12 +16,12 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicons/favicon.ico" />
           <meta name="application-name" content="&nbsp;" />
           <meta name="msapplication-TileColor" content="#FFFFFF" />
-          <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+          <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
           <meta name="description" content="Torne a ilha em um lugar melhor" />
-          <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-          <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-          <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-          <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+          <meta name="msapplication-square70x70logo" content="/favicons/mstile-70x70.png" />
+          <meta name="msapplication-wide310x150logo" content="/favicons/mstile-310x150.png" />
+          <meta name="msapplication-square310x310logo" content="/favicons/mstile-310x310.png" />
+          <meta name="msapplication-square150x150logo" content="/favicons/mstile-150x150.png" />
           <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
           <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
           <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
