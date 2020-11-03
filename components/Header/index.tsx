@@ -1,22 +1,39 @@
 import React from "react";
 import Image from "next/image";
+import { HideAt, ShowAt } from "react-with-breakpoints";
 
-import Navbar from "./Navbar";
+import MobileNavbar from "./MobileNavbar";
+import { headerNavbarLinks } from "./constants";
 
 const Header: React.FC = () => (
-  <header className="bg-black w-full flex items-center justify-between py-4 px-8 relative">
+  <header className="bg-black w-screen flex items-center justify-between py-4 px-8 relative">
     <div className="flex items-center w-full justify-between max-w-screen-lg mx-auto">
       <Image
-        className="h-100"
+        className="md:h-20 h-10"
         loading="eager"
         quality={100}
-        width={100}
-        height={100}
+        title="Floripa+"
         src="/images/logo.png"
         alt="Floripa Mais Logo"
+        unsized
       />
 
-      <Navbar />
+      <HideAt breakpoint="small">
+        <ul className="flex items-center">
+          {headerNavbarLinks.map(link => (
+            <li
+              key={link.label}
+              className="text-white ml-5 font-semibold text-xl uppercase"
+            >
+              {link.label}
+            </li>
+          ))}
+        </ul>
+      </HideAt>
+
+      <ShowAt breakpoint="small">
+        <MobileNavbar />
+      </ShowAt>
     </div>
   </header>
 );
