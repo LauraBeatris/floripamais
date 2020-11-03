@@ -2,20 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: Montserrat-Medium;
-  font-weight: 300;
-  src: url(/static/fonts/Montserrat-Light) format("ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  font-weight: 500;
-  src: url(/static/fonts/Montserrat-Medium) format("ttf");
-}
-
-@font-face {
-  font-family: Montserrat-SemiBold;
-  font-weight: 600;
-  src: url(/static/fonts/Montserrat-SemiBold) format("ttf");
-}
