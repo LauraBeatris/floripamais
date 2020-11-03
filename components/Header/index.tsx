@@ -23,7 +23,7 @@ const Header: React.FC = () => (
           {headerNavbarLinks.map(link => (
             <li
               key={link.label}
-              className="text-white ml-5 font-semibold text-xl uppercase"
+              className="text-white ml-8 font-semibold text-xl uppercase"
             >
               {link.label}
             </li>
