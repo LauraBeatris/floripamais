@@ -3,6 +3,9 @@
  */
 export const headerNavbarLinks = [
   {
+    label: "Ações",
+  },
+  {
     label: "Eventos",
   },
   {
