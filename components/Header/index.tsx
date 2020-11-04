@@ -9,15 +9,16 @@ import { headerNavbarLinks } from "./constants";
 const Header: React.FC = () => (
   <header className="bg-black w-screen fixed flex items-center justify-between py-4 px-8">
     <div className="flex items-center w-full justify-between max-w-screen-lg mx-auto">
-      <Image
-        className="md:h-20 h-10"
-        loading="eager"
-        quality={100}
-        title="Floripa+"
-        src="/images/logo.png"
-        alt="Floripa Mais Logo"
-        unsized
-      />
+      <div className="md:h-20 md:w-20 w-10 h-10 relative">
+        <Image
+          quality={100}
+          title="Floripa+"
+          src="/images/logo.png"
+          alt="Floripa Mais Logo"
+          loading="eager"
+          layout="fill"
+        />
+      </div>
 
       <HideAt breakpoint="small">
         <ul className="flex items-center">
