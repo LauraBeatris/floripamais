@@ -36,7 +36,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png" />
           <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png" />
         </Head>
-        <body>
+        <body className="font-body min-w-screen">
           <Main />
           <NextScript />
         </body>

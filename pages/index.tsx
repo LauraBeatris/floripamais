@@ -5,13 +5,7 @@ const App: React.FC = () => (
     <Head>
       <title>Floripa+ | Torne a ilha em um lugar melhor</title>
     </Head>
-    <main className="h-screen w-screen flex justify-center items-center bg-background-light">
-      <h1 className="text-gray-900 text-3xl animate-pulse font-medium">
-        Work in progress
-        {" "}
-        <span aria-label="Work in progress emoji" role="img">👷‍♀️</span>
-      </h1>
-    </main>
+    <main id="page-wrapper" className="h-screen w-screen flex justify-center items-center bg-background-light" />
   </>
 );
 
