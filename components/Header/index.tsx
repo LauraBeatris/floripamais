@@ -22,19 +22,21 @@ const Header: React.FC = () => (
 
       <HideAt breakpoint="small">
         <ul className="flex items-center">
-          {headerNavbarLinks.map(link => (
-            <ScrollLink
-              to={link.sectionId}
-              key={link.label}
-              spy
-              smooth
-              duration={500}
-              activeClass="text-yellow-100"
-              className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
-            >
-              {link.label}
-            </ScrollLink>
-          ))}
+          {
+            headerNavbarLinks.map(link => (
+              <ScrollLink
+                to={link.sectionId}
+                key={link.label}
+                spy
+                smooth
+                duration={500}
+                activeClass="text-yellow-100"
+                className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
+              >
+                {link.label}
+              </ScrollLink>
+            ))
+          }
         </ul>
       </HideAt>
 
