@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import { HideAt, ShowAt } from "react-with-breakpoints";
 
+import { scrollDuration } from "constants/scroll";
+
 import MobileNavbar from "./MobileNavbar";
 import { headerNavbarLinks } from "./constants";
 
@@ -29,7 +31,7 @@ const Header: React.FC = () => (
                 key={link.label}
                 spy
                 smooth
-                duration={500}
+                duration={scrollDuration}
                 activeClass="text-yellow-100"
                 className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
               >
