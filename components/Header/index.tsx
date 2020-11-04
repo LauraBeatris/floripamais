@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 import { HideAt, ShowAt } from "react-with-breakpoints";
 
 import MobileNavbar from "./MobileNavbar";
 import { headerNavbarLinks } from "./constants";
 
 const Header: React.FC = () => (
-  <header className="bg-black w-screen flex items-center justify-between py-4 px-8 relative">
+  <header className="bg-black w-screen fixed flex items-center justify-between py-4 px-8">
     <div className="flex items-center w-full justify-between max-w-screen-lg mx-auto">
       <Image
         className="md:h-20 h-10"
@@ -21,12 +22,17 @@ const Header: React.FC = () => (
       <HideAt breakpoint="small">
         <ul className="flex items-center">
           {headerNavbarLinks.map(link => (
-            <li
+            <ScrollLink
+              to={link.sectionId}
               key={link.label}
-              className="text-white ml-8 font-semibold text-xl uppercase"
+              spy
+              smooth
+              duration={500}
+              activeClass="text-yellow-100"
+              className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
             >
               {link.label}
-            </li>
+            </ScrollLink>
           ))}
         </ul>
       </HideAt>

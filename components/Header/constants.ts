@@ -4,20 +4,22 @@
 export const headerNavbarLinks = [
   {
     label: "Ações",
-  },
-  {
-    label: "Eventos",
+    sectionId: "actions-section",
   },
   {
     label: "Doações",
+    sectionId: "donations-section",
   },
   {
     label: "Missão",
+    sectionId: "mission-section",
   },
   {
     label: "Equipe",
+    sectionId: "team-section",
   },
   {
     label: "Contato",
+    sectionId: "contact-section",
   },
 ];

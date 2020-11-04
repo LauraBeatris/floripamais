@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import useOnClickOutside from "use-onclickoutside";
 import { AiOutlineClose } from "react-icons/ai";
@@ -48,12 +49,17 @@ const NavbarMobile: React.FC = () => {
             <ul className="w-full flex flex-col">
               {
                 headerNavbarLinks.map(link => (
-                  <li
+                  <Link
+                    to={link.sectionId}
+                    spy
                     key={link.label}
-                    className="text-white uppercase font-semibold my-5 text-lg"
+                    smooth
+                    duration={500}
+                    activeClass="text-yellow-100"
+                    className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
                   >
                     {link.label}
-                  </li>
+                  </Link>
                 ))
               }
             </ul>
