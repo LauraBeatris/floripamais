@@ -3,6 +3,10 @@ module.exports = {
     "./pages/*.tsx",
     "./components/*.ts",
   ],
+  variants: {
+    margin: ({ after }) => after(["last"]),
+    borderWidth: ({ after }) => after(["hover"]),
+  },
   theme: {
     extend: {
       colors: {
@@ -17,6 +21,5 @@ module.exports = {
       body: ["Montserrat", "Arial", "sans-serif"],
     },
   },
-  variants: {},
   plugins: [],
 };
