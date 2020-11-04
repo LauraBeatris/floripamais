@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.footer-social-media-link:not(:last-child)::after {
+  content: "-";
+  margin: 0 5px;
+}
+
+.footer-social-media-link:not(:last-child)::after:hover {
+  text-decoration: none;
+}
