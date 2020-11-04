@@ -7,14 +7,14 @@ const FooterContentItem: React.FC<FooterContentItemProps> = ({
   title,
   children,
 }) => (
-  <div className="flex flex-col items-start last:mt-5 md:last:mt-0">
+  <div className="flex flex-col items-start last:mt-5 md:last:mt-0 max-w-full">
     <h3 className="mb-5 text-orange-100 text-3xl font-semibold">{title}</h3>
 
     {children}
   </div>
 );
 
-const subtitleClassName = "text-white";
+const subtitleClassName = "break-words text-white max-w-full";
 
 const FooterContent: React.FC<FooterContentProps> = ({
   footerSocialMediasTitle,

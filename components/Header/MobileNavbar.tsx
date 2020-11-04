@@ -39,7 +39,7 @@ const NavbarMobile: React.FC = () => {
   return (
     <>
       <button
-        className="cursor-pointer bg-none border-none outline-none focus:outline-none"
+        className="flex items-center cursor-pointer bg-none border-none outline-none focus:outline-none"
         type="button"
         onClick={openNavbarMobile}
       >
