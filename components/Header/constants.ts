@@ -1,5 +1,7 @@
 /**
  * Defines the links to be show on the header navbar
+ *
+ * TODO -> Get the section ids from constants stored on the sections structure
  */
 export const headerNavbarLinks = [
   {
