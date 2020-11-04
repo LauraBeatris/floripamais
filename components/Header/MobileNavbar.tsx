@@ -56,7 +56,7 @@ const NavbarMobile: React.FC = () => {
                     smooth
                     duration={500}
                     activeClass="text-yellow-100"
-                    className="text-white cursor-pointer hover:text-yellow-100 ml-8 font-semibold text-xl uppercase"
+                    className="text-white cursor-pointer hover:text-yellow-100 mt-8 font-semibold text-xl uppercase"
                   >
                     {link.label}
                   </Link>
