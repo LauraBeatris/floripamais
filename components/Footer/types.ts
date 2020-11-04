@@ -4,10 +4,10 @@ export interface SocialMedia {
 }
 
 export interface FooterContentProps {
-  footerSocialMediasTitle: string;
-  footerContactTitle: string;
-  socialMedias: SocialMedia[];
-  email: string;
+  footerSocialMediasTitle?: string;
+  footerContactTitle?: string;
+  socialMedias?: SocialMedia[];
+  email?: string;
 }
 
 export interface FooterContentItemProps {

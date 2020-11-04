@@ -1,9 +1,11 @@
 import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import useOnClickOutside from "use-onclickoutside";
 import { AiOutlineClose } from "react-icons/ai";
+
+import { scrollDuration } from "constants/scroll";
 
 import { headerNavbarLinks } from "./constants";
 
@@ -79,17 +81,17 @@ const NavbarMobile: React.FC = () => {
               <ul className="w-full flex flex-col">
                 {
                   headerNavbarLinks.map(link => (
-                    <Link
+                    <ScrollLink
                       to={link.sectionId}
                       spy
                       key={link.label}
                       smooth
-                      duration={500}
+                      duration={scrollDuration}
                       activeClass="text-yellow-100"
                       className="text-white cursor-pointer hover:text-yellow-100 mt-8 font-semibold text-xl uppercase"
                     >
                       {link.label}
-                    </Link>
+                    </ScrollLink>
                   ))
                 }
               </ul>
