@@ -18,8 +18,8 @@ const navbarMotionStyles = {
   exit: navbarInitialMotionStyle,
   initial: navbarInitialMotionStyle,
   animate: {
-    opacity: 1,
     right: 0,
+    opacity: 1,
     left: "unset",
   },
 };
