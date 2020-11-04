@@ -10,7 +10,6 @@ import { headerNavbarLinks } from "./constants";
 const navbarInitialMotionStyle = {
   top: 0,
   right: 0,
-  opacity: 0,
   left: "100%",
 };
 
@@ -18,7 +17,6 @@ const navbarMotionStyles = {
   exit: navbarInitialMotionStyle,
   initial: navbarInitialMotionStyle,
   animate: {
-    opacity: 1,
     right: 0,
     left: "unset",
   },
