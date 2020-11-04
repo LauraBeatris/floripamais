@@ -27,7 +27,7 @@ const Content: React.FC<IntroductionSectionContentProps> = ({
     />
 
     <div className="max-w-screen-lg w-full mx-auto z-20">
-      <h1 className="text-white-200 w-full md:w-30 font-bold text-4xl">
+      <h1 className="text-gray-200 w-full md:w-30 font-bold text-4xl">
         {title}
       </h1>
 
