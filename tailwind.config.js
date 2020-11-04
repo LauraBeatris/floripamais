@@ -1,8 +1,13 @@
+const purgeExtensions = "*.{js,ts,jsx,tsx}";
+
 module.exports = {
-  purge: [
-    "./pages/*.tsx",
-    "./components/*.ts",
-  ],
+  purge: {
+    layers: ["base", "components", "utilities"],
+    content: [
+      `./pages/**/${purgeExtensions}`,
+      `./components/**/${purgeExtensions}`,
+    ],
+  },
   variants: {
     margin: ({ after }) => after(["last"]),
     borderWidth: ({ after }) => after(["hover"]),

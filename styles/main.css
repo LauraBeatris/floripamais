@@ -1,5 +1,8 @@
+/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+/* purgecss end ignore */
+
 @tailwind utilities;
 
 .footer-social-media-link:not(:last-child)::after {
