@@ -1,6 +1,6 @@
 import { SocialMedia } from "./types";
 
-export const footerSocialMedias: SocialMedia[] = [
+const socialMedias: SocialMedia[] = [
   {
     href: "https://www.instagram.com/floripa.mais/",
     label: "Instagram",
@@ -11,4 +11,10 @@ export const footerSocialMedias: SocialMedia[] = [
   },
 ];
 
-export const orgEmail = "organizacaofloripamais@gmail.com";
+export const footerContent = {
+  socialMediasTitle: "Conecte-se",
+  contactTitle: "Contato",
+  socialMedias,
+  email: "organizacaofloripamais@gmail.com",
+};
+
