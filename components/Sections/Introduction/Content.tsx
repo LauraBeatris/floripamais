@@ -9,7 +9,7 @@ import { scrollDuration } from "constants/scroll";
 import { IntroductionSectionContentProps } from "./types";
 import { introductionSectionId, introductionSectionContent } from "./constants";
 
-const Content: React.FC<IntroductionSectionContentProps> = ({
+const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
   backgroundSrc = introductionSectionContent.backgroundSrc,
   buttonText = introductionSectionContent.buttonText,
   title = introductionSectionContent.title,
@@ -44,4 +44,4 @@ const Content: React.FC<IntroductionSectionContentProps> = ({
   </section>
 );
 
-export default Content;
+export default IntroductionSectionContent;
