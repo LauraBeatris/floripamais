@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import useOnClickOutside from "use-onclickoutside";
@@ -6,23 +7,41 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import { headerNavbarLinks } from "./constants";
 
+const navbarMotionStyles = {
+  exit: {
+    left: "100%",
+    opacity: 0,
+  },
+  initial: {
+    right: 0,
+    opacity: 1,
+  },
+  animate: {
+    opacity: 1,
+  },
+};
+
 const NavbarMobile: React.FC = () => {
   const [isNavbarMobileOpen, setIsNavbarMobileOpen] = useState(false);
 
   const navElementRef = useRef(null);
 
-  const toggleNavbarMobile = (): void => {
-    setIsNavbarMobileOpen(prev => !prev);
+  const openNavbarMobile = (): void => {
+    setIsNavbarMobileOpen(true);
   };
 
-  useOnClickOutside(navElementRef, toggleNavbarMobile);
+  const closeNavbarMobile = (): void => {
+    setIsNavbarMobileOpen(false);
+  };
+
+  useOnClickOutside(navElementRef, closeNavbarMobile);
 
   return (
     <>
       <button
         className="cursor-pointer bg-none border-none outline-none focus:outline-none"
         type="button"
-        onClick={toggleNavbarMobile}
+        onClick={openNavbarMobile}
       >
         <Image
           src="/icons/navbarButton.png"
@@ -33,39 +52,48 @@ const NavbarMobile: React.FC = () => {
         />
       </button>
 
-      {
-        isNavbarMobileOpen && (
-          <nav ref={navElementRef} className="flex flex-col w-64 p-5 h-screen fixed bg-gray-900 top-0 right-0">
-            <header className="w-full flex justify-end">
-              <button
-                type="button"
-                onClick={toggleNavbarMobile}
-                className="outline-none focus:outline-none"
-              >
-                <AiOutlineClose className="text-white text-2xl" color="#fff" />
-              </button>
-            </header>
+      <AnimatePresence>
+        {
+          isNavbarMobileOpen && (
+            <motion.nav
+              key="navbar"
+              ref={navElementRef}
+              exit={navbarMotionStyles.exit}
+              initial={navbarMotionStyles.initial}
+              animate={navbarMotionStyles.animate}
+              className="flex flex-col w-64 p-5 h-screen fixed bg-gray-900 top-0 right-0"
+            >
+              <header className="w-full flex justify-end">
+                <button
+                  type="button"
+                  onClick={closeNavbarMobile}
+                  className="outline-none focus:outline-none"
+                >
+                  <AiOutlineClose className="text-white text-2xl" color="#fff" />
+                </button>
+              </header>
 
-            <ul className="w-full flex flex-col">
-              {
-                headerNavbarLinks.map(link => (
-                  <Link
-                    to={link.sectionId}
-                    spy
-                    key={link.label}
-                    smooth
-                    duration={500}
-                    activeClass="text-yellow-100"
-                    className="text-white cursor-pointer hover:text-yellow-100 mt-8 font-semibold text-xl uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                ))
-              }
-            </ul>
-          </nav>
-        )
-      }
+              <ul className="w-full flex flex-col">
+                {
+                  headerNavbarLinks.map(link => (
+                    <Link
+                      to={link.sectionId}
+                      spy
+                      key={link.label}
+                      smooth
+                      duration={500}
+                      activeClass="text-yellow-100"
+                      className="text-white cursor-pointer hover:text-yellow-100 mt-8 font-semibold text-xl uppercase"
+                    >
+                      {link.label}
+                    </Link>
+                  ))
+                }
+              </ul>
+            </motion.nav>
+          )
+        }
+      </AnimatePresence>
     </>
   );
 };
