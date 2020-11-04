@@ -17,13 +17,13 @@ const Content: React.FC<IntroductionSectionContentProps> = ({
   <section id={introductionSectionId} className="flex items-center py-10 px-8 md:p-20 relative h-section-introduction bg-white">
     <Image
       src={backgroundSrc}
-      className="absolute object-cover h-full w-full"
+      className="absolute object-cover object-center h-full w-full"
       layout="fill"
       quality={100}
       loading="eager"
     />
 
-    <div className="absolute right-0 left-0 px-5">
+    <div className="max-w-screen-lg w-full mx-auto absolute right-0 left-0 px-5">
       <h1 className="text-white w-full md:w-30 font-bold text-4xl">
         {title}
       </h1>
