@@ -8,8 +8,8 @@ const reuseColors = {
 };
 
 const reuseComponentsLengths = {
-  "header-desktop": "130px",
-  "header-mobile": "85px",
+  "header-desktop": "8rem",
+  "header-mobile": "5rem",
 };
 
 module.exports = {
@@ -37,7 +37,7 @@ module.exports = {
       },
       height: {
         ...reuseComponentsLengths,
-        "section-introduction": "450px",
+        "section-introduction": "30rem",
       },
       width: {
         22: "22rem",
