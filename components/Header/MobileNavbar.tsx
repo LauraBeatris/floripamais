@@ -7,17 +7,20 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import { headerNavbarLinks } from "./constants";
 
+const navbarInitialMotionStyle = {
+  top: 0,
+  right: 0,
+  opacity: 0,
+  left: "100%",
+};
+
 const navbarMotionStyles = {
-  exit: {
-    left: "100%",
-    opacity: 0,
-  },
-  initial: {
-    right: 0,
-    opacity: 1,
-  },
+  exit: navbarInitialMotionStyle,
+  initial: navbarInitialMotionStyle,
   animate: {
     opacity: 1,
+    right: 0,
+    left: "unset",
   },
 };
 
@@ -61,7 +64,7 @@ const NavbarMobile: React.FC = () => {
               exit={navbarMotionStyles.exit}
               initial={navbarMotionStyles.initial}
               animate={navbarMotionStyles.animate}
-              className="flex flex-col w-64 p-5 h-screen fixed bg-gray-900 top-0 right-0"
+              className="flex flex-col w-64 p-5 h-screen fixed bg-gray-900"
             >
               <header className="w-full flex justify-end">
                 <button
