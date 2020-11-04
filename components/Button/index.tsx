@@ -4,33 +4,41 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { ButtonProps, ButtonVariant } from "./types";
 
-const iconClasses = "text-2xl ml-8";
+const iconClassNames = "text-2xl ml-8";
+const buttonElementClassNames = "flex border-none outline-none focus:outline-none text-lg items-center bg-orange-100 hover:bg-orange-shade transition-colors duration-200 py-2 px-5 rounded-full";
+const buttonContainerClassNames = "flex pr-5 items-start justify-center py-0 border border-orange-100 hover:border-orange-shade rounded-full";
 
-const buttonClasses = "flex outline-none focus:outline-none text-lg items-center bg-orange-100 hover:bg-orange-shade transition-colors duration-200 py-2 px-5 rounded-full";
-
-const buttonVariantsStyles = {
+const buttonElementVariantClassNames = {
   [ButtonVariant.Primary]: "text-black",
   [ButtonVariant.Secondary]: "text-white",
 };
 
 const Button: React.FC<ButtonProps> = ({
-  className,
+  buttonElementClassName,
+  buttonContainerClassName,
   variant = ButtonVariant.Primary,
   children,
   ...rest
 }) => {
-  const concatenateClassName = clsx([
-    className,
-    buttonClasses,
-    buttonVariantsStyles[variant],
+  const concatenateButtonElementClassNames = clsx([
+    buttonElementClassNames,
+    buttonElementClassName,
+    buttonElementVariantClassNames[variant],
+  ]);
+
+  const concatenateButtonContainerClassNames = clsx([
+    buttonContainerClassNames,
+    buttonContainerClassName,
   ]);
 
   return (
-    <button type="button" className={concatenateClassName} {...rest}>
-      {children}
+    <div role="button" className={concatenateButtonContainerClassNames}>
+      <button type="button" className={concatenateButtonElementClassNames} {...rest}>
+        {children}
 
-      <BsArrowRight className={iconClasses} />
-    </button>
+        <BsArrowRight className={iconClassNames} />
+      </button>
+    </div>
   );
 };
 

@@ -5,6 +5,10 @@ export enum ButtonVariant {
   "Secondary"
 }
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  variant: ButtonVariant;
+type ButtonElementAttributes = HTMLAttributes<HTMLButtonElement>;
+
+export interface ButtonProps extends Omit<ButtonElementAttributes, "className"> {
+  buttonContainerClassName?: string;
+  buttonElementClassName?: ButtonElementAttributes["className"];
+  variant?: ButtonVariant;
 }

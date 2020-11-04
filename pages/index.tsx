@@ -9,7 +9,7 @@ const App: React.FC = () => (
       <title>Floripa+ | Torne a ilha em um lugar melhor</title>
     </Head>
     <main id="page-wrapper" className="flex flex-col h-screen w-screen justify-center items-center bg-background-light">
-      <Button variant={ButtonVariant.Primary} className="mb-10">Primary</Button>
+      <Button variant={ButtonVariant.Primary} buttonContainerClassName="mb-10">Primary</Button>
 
       <Button variant={ButtonVariant.Secondary}>Secondary</Button>
     </main>
