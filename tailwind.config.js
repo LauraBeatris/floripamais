@@ -28,7 +28,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#0d0c0f",
-        "white-200": "#F7FAFC",
+        "white-200": "#FFF3EB",
         "yellow-100": "#DDA158",
         "orange-100": reuseColors["orange-100"],
         "orange-200": "#FC9414",
