@@ -11,7 +11,7 @@ export const missionSectionContent = [
   },
   {
     title: "Valores",
-    emoji: "⚖",
+    emoji: "⚖️",
     text: "Altruísmo, empatia e inclusão.",
   },
 ];
