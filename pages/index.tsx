@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import MaxWidthContainer from "components/MaxWidthContainer";
 import IntroductionSection from "components/Sections/Introduction";
 import MissionSection from "components/Sections/Mission";
 
@@ -11,9 +12,9 @@ const App: React.FC = () => (
     <main id="page-wrapper" className="pt-header-mobile md:pt-header-desktop flex flex-col justify-start bg-background-light">
       <IntroductionSection />
 
-      <div className="max-w-screen-xl mx-auto w-full">
+      <MaxWidthContainer>
         <MissionSection />
-      </div>
+      </MaxWidthContainer>
     </main>
   </>
 );

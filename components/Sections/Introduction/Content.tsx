@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import MaxWidthContainer from "components/MaxWidthContainer";
 
 import Button from "components/Button";
 import { ButtonVariant } from "components/Button/types";
@@ -26,7 +27,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       loading="eager"
     />
 
-    <div className="max-w-screen-lg w-full mx-auto z-20">
+    <MaxWidthContainer className="z-20">
       <h1 className="text-gray-200 w-full md:w-30 font-bold text-4xl">
         {title}
       </h1>
@@ -39,7 +40,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
           {buttonText}
         </Button>
       </ScrollLink>
-    </div>
+    </MaxWidthContainer>
   </section>
 );
 

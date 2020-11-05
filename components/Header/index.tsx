@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { HideAt, ShowAt } from "react-with-breakpoints";
+import MaxWidthContainer from "components/MaxWidthContainer";
 
 import ScrollLink from "components/ScrollLink";
 
@@ -14,7 +15,7 @@ const Header: React.FC = () => (
     id={headerId}
     className="bg-black w-screen z-30 fixed flex items-center justify-between py-4 px-8 h-header-mobile md:h-header-desktop"
   >
-    <div className="flex items-center w-full justify-between max-w-screen-lg mx-auto">
+    <MaxWidthContainer className="flex items-center w-full justify-between">
       <div className="md:h-20 md:w-20 w-10 h-10 relative">
         <Image
           quality={100}
@@ -46,7 +47,7 @@ const Header: React.FC = () => (
       <ShowAt breakpoint="small">
         <MobileNavbar />
       </ShowAt>
-    </div>
+    </MaxWidthContainer>
   </header>
 );
 

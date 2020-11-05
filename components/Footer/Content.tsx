@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import MaxWidthContainer from "components/MaxWidthContainer";
 
 import { FooterContentProps, FooterContentItemProps } from "./types";
 import { footerContent } from "./constants";
@@ -29,7 +30,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
 
   return (
     <footer className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full max-w-screen-lg mx-auto">
+      <MaxWidthContainer className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <FooterContentItem title={footerSocialMediasTitle}>
           <ul className="w-full flex">
             {
@@ -51,7 +52,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
         <FooterContentItem title={footerContactTitle}>
           <a href={mailTo} className={subtitleClassName}>{email}</a>
         </FooterContentItem>
-      </div>
+      </MaxWidthContainer>
     </footer>
   );
 };
