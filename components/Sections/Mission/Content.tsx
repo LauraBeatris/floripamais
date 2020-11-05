@@ -1,6 +1,8 @@
 import React from "react";
 import Emoji from "a11y-react-emoji";
 
+import withMaxWidthContainer from "hocs/withMaxWidthContainer";
+
 import { missionSectionContent, missionSectionId } from "./constants";
 import { MissionSectionContentProps } from "./types";
 
@@ -9,7 +11,7 @@ const MissionSectionContent: React.FC<MissionSectionContentProps> = ({
 }) => (
   <section
     id={missionSectionId}
-    className="flex flex-col bg-background-light p-10 md:p-20"
+    className="flex flex-col bg-white-shade p-10 md:p-20"
   >
     {
       content.map(({ title, emoji, text }) => (
@@ -29,4 +31,4 @@ const MissionSectionContent: React.FC<MissionSectionContentProps> = ({
   </section>
 );
 
-export default MissionSectionContent;
+export default withMaxWidthContainer(MissionSectionContent);
