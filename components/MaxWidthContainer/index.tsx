@@ -1,12 +1,15 @@
-import React, { HTMLAttributes } from "react";
+import React from "react";
 import clsx from "clsx";
 
-const MaxWidthContainer: React.FC<HTMLAttributes<HTMLDivElement>> = ({
+import { MaxWidthContainerProps } from "./types";
+
+const MaxWidthContainer: React.FC<MaxWidthContainerProps> = ({
   children,
   className,
+  maxWidth = "max-w-screen-lg",
   ...rest
 }) => {
-  const concatenateClassName = clsx("max-w-screen-lg mx-auto w-full", className);
+  const concatenateClassName = clsx("mx-auto w-full", maxWidth, className);
 
   return (
     <div {...rest} className={concatenateClassName}>
