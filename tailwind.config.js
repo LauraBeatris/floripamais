@@ -37,7 +37,8 @@ module.exports = {
       },
       height: {
         ...reuseComponentsLengths,
-        "section-introduction": "30rem",
+        "section-introduction-desktop": `calc(100vh - ${reuseComponentsLengths["header-desktop"]})`,
+        "section-introduction-mobile": `calc(100vh - ${reuseComponentsLengths["header-mobile"]})`,
       },
       width: {
         22: "22rem",

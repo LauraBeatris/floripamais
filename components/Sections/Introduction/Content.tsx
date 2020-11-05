@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import MaxWidthContainer from "components/MaxWidthContainer";
 
+import MaxWidthContainer from "components/MaxWidthContainer";
 import Button from "components/Button";
 import { ButtonVariant } from "components/Button/types";
 import ScrollLink from "components/ScrollLink";
@@ -17,7 +17,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
 }) => (
   <section
     id={introductionSectionId}
-    className="flex items-center py-10 px-5 md:p-20 relative h-section-introduction bg-white"
+    className="flex items-center py-10 px-5 md:p-20 relative h-section-introduction-mobile md:h-section-introduction-desktop bg-white"
   >
     <Image
       src={backgroundSrc}
