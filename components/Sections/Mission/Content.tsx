@@ -1,5 +1,7 @@
 import React from "react";
 
+import withMaxWidthContainer from "hocs/withMaxWidthContainer";
+
 import { missionSectionContent, missionSectionId } from "./constants";
 import { MissionSectionContentProps } from "./types";
 import Section from "../Section";
@@ -27,4 +29,4 @@ const MissionSectionContent: React.FC<MissionSectionContentProps> = ({
   </section>
 );
 
-export default MissionSectionContent;
+export default withMaxWidthContainer(MissionSectionContent);

@@ -13,7 +13,6 @@ const App: React.FC = () => (
     <main id="page-wrapper" className="pt-header-mobile md:pt-header-desktop flex flex-col justify-start bg-white-shade">
       <IntroductionSection />
       <AchievementsSection />
-
       <DonationsSection />
       <MissionSection />
     </main>
