@@ -33,7 +33,7 @@ module.exports = {
         "orange-100": reuseColors["orange-100"],
         "orange-200": "#FC9414",
         "orange-shade": shade(0.1, reuseColors["orange-100"]),
-        "background-light": "#F2F2F2",
+        "white-shade": "#F2F2F2",
       },
       height: {
         ...reuseComponentsLengths,
