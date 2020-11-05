@@ -11,6 +11,7 @@
     "lint": "yarn run linter && yarn run check-types"
   },
   "dependencies": {
+    "a11y-react-emoji": "^1.1.2",
     "autoprefixer": "9.8.6",
     "clsx": "^1.1.1",
     "framer-motion": "^2.9.4",
