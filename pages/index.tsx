@@ -3,7 +3,6 @@ import Head from "next/head";
 import IntroductionSection from "components/Sections/Introduction";
 import MissionSection from "components/Sections/Mission";
 import AchievementsSection from "components/Sections/Achievements";
-import Section from "components/Sections/Section";
 
 const App: React.FC = () => (
   <>
