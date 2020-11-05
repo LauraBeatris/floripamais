@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "a11y-react-emoji";
 
 import { missionSectionContent, missionSectionId } from "./constants";
 import { MissionSectionContentProps } from "./types";
@@ -16,7 +17,7 @@ const MissionSectionContent: React.FC<MissionSectionContentProps> = ({
           <h1 className="text-center text-black font-bold text-3xl">
             {title}
             {" "}
-            <span role="img">{emoji}</span>
+            <Emoji symbol={emoji} />
           </h1>
 
           <h2 className="text-center text-black font-medium text-2xl mt-8">
