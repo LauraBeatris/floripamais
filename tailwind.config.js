@@ -22,6 +22,7 @@ module.exports = {
   },
   variants: {
     margin: ({ after }) => after(["last"]),
+    padding: ({ after }) => after(["first"]),
     borderWidth: ({ after }) => after(["hover"]),
   },
   theme: {
