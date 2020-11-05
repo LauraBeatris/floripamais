@@ -10,7 +10,10 @@ const App: React.FC = () => (
     </Head>
     <main id="page-wrapper" className="pt-header-mobile md:pt-header-desktop flex flex-col justify-start bg-background-light">
       <IntroductionSection />
-      <MissionSection />
+
+      <div className="max-w-screen-xl mx-auto w-full">
+        <MissionSection />
+      </div>
     </main>
   </>
 );
