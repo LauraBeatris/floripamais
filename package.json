@@ -14,6 +14,7 @@
     "a11y-react-emoji": "^1.1.2",
     "autoprefixer": "9.8.6",
     "clsx": "^1.1.1",
+    "conditional-wrap": "^1.0.2",
     "framer-motion": "^2.9.4",
     "next": "^10.0.1",
     "next-seo": "^4.13.0",
