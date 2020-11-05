@@ -14,7 +14,7 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
   const [headerHeight, setHeaderHeight] = useState(0);
 
   useEffect(() => {
-    setHeaderHeight(-(document?.querySelector<HTMLHeadingElement>(`#${headerId}`)?.offsetHeight));
+    setHeaderHeight(-(document?.querySelector<HTMLElement>(`#${headerId}`)?.offsetHeight));
   }, []);
 
   return (
