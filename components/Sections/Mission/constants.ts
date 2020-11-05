@@ -15,3 +15,5 @@ export const missionSectionContent = [
     text: "Altruísmo, empatia e inclusão.",
   },
 ];
+
+export const missionSectionId = "mission-section";

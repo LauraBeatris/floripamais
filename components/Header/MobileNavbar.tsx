@@ -5,7 +5,7 @@ import Image from "next/image";
 import useOnClickOutside from "use-onclickoutside";
 import { AiOutlineClose } from "react-icons/ai";
 
-import { scrollDuration } from "constants/scroll";
+import { scrollDuration, scrollOffset } from "constants/scroll";
 
 import { headerNavbarLinks } from "./constants";
 
@@ -86,6 +86,8 @@ const NavbarMobile: React.FC = () => {
                       spy
                       key={link.label}
                       smooth
+                      offset={scrollOffset}
+                      onClick={closeNavbarMobile}
                       duration={scrollDuration}
                       activeClass="text-yellow-100"
                       className="text-white cursor-pointer hover:text-yellow-100 mt-8 font-semibold text-xl uppercase"

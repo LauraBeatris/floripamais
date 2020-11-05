@@ -4,10 +4,11 @@ import { Link as ScrollLink } from "react-scroll";
 
 import Button from "components/Button";
 import { ButtonVariant } from "components/Button/types";
-import { scrollDuration } from "constants/scroll";
+import { scrollDuration, scrollOffset } from "constants/scroll";
 
 import { IntroductionSectionContentProps } from "./types";
 import { introductionSectionId, introductionSectionContent } from "./constants";
+import { missionSectionId } from "../Mission/constants";
 
 const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
   backgroundSrc = introductionSectionContent.backgroundSrc,
@@ -32,7 +33,12 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       </h1>
 
       {/* TODO -> Refer id of the mission section */}
-      <ScrollLink duration={scrollDuration} smooth to="mission-section">
+      <ScrollLink
+        offset={scrollOffset}
+        duration={scrollDuration}
+        smooth
+        to={missionSectionId}
+      >
         <Button
           variant={ButtonVariant.Secondary}
           buttonContainerClassName="mt-10 w-full md:w-22"
