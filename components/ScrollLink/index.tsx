@@ -4,12 +4,11 @@ import { Link } from "react-scroll";
 import { headerId } from "components/Header";
 
 import { ScrollLinkProps } from "./types";
-import { defaultScrollDuration } from "./constants";
 
 const ScrollLink: React.FC<ScrollLinkProps> = ({
   to,
   children,
-  duration = defaultScrollDuration,
+  duration = 500,
   ...rest
 }) => {
   const [headerHeight, setHeaderHeight] = useState(0);
