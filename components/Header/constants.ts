@@ -1,3 +1,5 @@
+import { missionSectionId } from "components/Sections/Mission/constants";
+
 /**
  * Defines the links to be show on the header navbar
  *
@@ -14,7 +16,7 @@ export const headerNavbarLinks = [
   },
   {
     label: "Missão",
-    sectionId: "mission-section",
+    sectionId: missionSectionId,
   },
   {
     label: "Equipe",

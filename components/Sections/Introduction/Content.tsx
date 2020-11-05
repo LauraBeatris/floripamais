@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import { Link as ScrollLink } from "react-scroll";
+import MaxWidthContainer from "components/MaxWidthContainer";
 
 import Button from "components/Button";
 import { ButtonVariant } from "components/Button/types";
-import { scrollDuration } from "constants/scroll";
+import ScrollLink from "components/ScrollLink";
 
 import { IntroductionSectionContentProps } from "./types";
 import { introductionSectionId, introductionSectionContent } from "./constants";
+import { missionSectionId } from "../Mission/constants";
 
-const Content: React.FC<IntroductionSectionContentProps> = ({
+const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
   backgroundSrc = introductionSectionContent.backgroundSrc,
   buttonText = introductionSectionContent.buttonText,
   title = introductionSectionContent.title,
@@ -26,13 +27,12 @@ const Content: React.FC<IntroductionSectionContentProps> = ({
       loading="eager"
     />
 
-    <div className="max-w-screen-lg w-full mx-auto z-20">
-      <h1 className="text-white-200 w-full md:w-30 font-bold text-4xl">
+    <MaxWidthContainer className="z-20">
+      <h1 className="text-gray-200 w-full md:w-30 font-bold text-4xl">
         {title}
       </h1>
 
-      {/* TODO -> Refer id of the mission section */}
-      <ScrollLink duration={scrollDuration} smooth to="mission-section">
+      <ScrollLink to={missionSectionId}>
         <Button
           variant={ButtonVariant.Secondary}
           buttonContainerClassName="mt-10 w-full md:w-22"
@@ -40,8 +40,8 @@ const Content: React.FC<IntroductionSectionContentProps> = ({
           {buttonText}
         </Button>
       </ScrollLink>
-    </div>
+    </MaxWidthContainer>
   </section>
 );
 
-export default Content;
+export default IntroductionSectionContent;

@@ -1,9 +1,9 @@
 import React from "react";
 
-import Content from "./Content";
+import IntroductionSectionContent from "./Content";
 
 const IntroductionSection: React.FC = () => (
-  <Content />
+  <IntroductionSectionContent />
 );
 
 export default IntroductionSection;
