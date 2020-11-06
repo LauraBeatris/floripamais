@@ -15,8 +15,8 @@ const Button: React.FC<ButtonProps> = ({
   const concatenateButtonElementClassNames = clsx(
     styles.element,
     styles.elementAnimation,
-    buttonElementClassName,
     buttonVariantsStyles[variant],
+    buttonElementClassName,
   );
 
   const concatenateButtonWrapperClassNames = clsx(
