@@ -9,7 +9,7 @@ const buttonStyles = {
 
   container: "flex pr-5 items-start justify-center py-0 border border-orange-100 hover:border-orange-shade rounded-full",
 
-  elementAnimation: "transform transition-transform duration-200 hover:translate-x-6 focus:translate-x-0",
+  elementAnimation: "transform transition-transform duration-200 md:hover:translate-x-6 hover:translate-x-0",
 };
 
 export const buttonVariantsStyles = {
