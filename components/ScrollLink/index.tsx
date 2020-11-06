@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-import { headerId } from "components/Header";
+import { headerId } from "components/Header/constants";
 
 import { ScrollLinkProps } from "./types";
 

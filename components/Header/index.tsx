@@ -6,9 +6,7 @@ import MaxWidthContainer from "components/MaxWidthContainer";
 import ScrollLink from "components/ScrollLink";
 
 import MobileNavbar from "./MobileNavbar";
-import { headerNavbarLinks } from "./constants";
-
-export const headerId = "main-page-header";
+import { headerId, headerNavbarLinks } from "./constants";
 
 const Header: React.FC = () => (
   <header

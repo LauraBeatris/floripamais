@@ -29,3 +29,5 @@ export const headerNavbarLinks = [
     sectionId: "contact-section",
   },
 ];
+
+export const headerId = "main-page-header";
