@@ -35,7 +35,7 @@ const Section: React.FC<SectionProps> = ({
         {
           emojiSymbol && (
             <Emoji
-              className="text-3xl mb-3"
+              className="inline-block text-3xl mb-3"
               symbol={emojiSymbol}
             />
           )

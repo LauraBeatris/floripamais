@@ -3,6 +3,7 @@ import Head from "next/head";
 import IntroductionSection from "components/Sections/Introduction";
 import MissionSection from "components/Sections/Mission";
 import AchievementsSection from "components/Sections/Achievements";
+import DonationsSection from "components/Sections/Donations";
 
 const App: React.FC = () => (
   <>
@@ -13,6 +14,7 @@ const App: React.FC = () => (
       <IntroductionSection />
       <AchievementsSection />
 
+      <DonationsSection />
       <MissionSection />
     </main>
   </>
