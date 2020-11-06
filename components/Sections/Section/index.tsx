@@ -11,11 +11,11 @@ import { sectionStyles, sectionVariantsStyles } from "./styles";
 
 const Section: React.FC<SectionProps> = ({
   emojiSymbol,
-  className,
   buttonText,
   buttonLink,
-  variant = SectionVariant.Secondary,
+  className,
   children,
+  variant = SectionVariant.Secondary,
   title,
   text,
   ...rest
