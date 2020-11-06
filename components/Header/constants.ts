@@ -1,3 +1,4 @@
+import { donationsSectionId } from "components/Sections/Donations/constants";
 import { missionSectionId } from "components/Sections/Mission/constants";
 
 /**
@@ -12,7 +13,7 @@ export const headerNavbarLinks = [
   },
   {
     label: "Doações",
-    sectionId: "donations-section",
+    sectionId: donationsSectionId,
   },
   {
     label: "Missão",

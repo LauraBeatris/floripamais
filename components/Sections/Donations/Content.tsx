@@ -3,7 +3,7 @@ import React from "react";
 import Section from "components/Sections/Section";
 
 import { DonationsSectionContentProps } from "./types";
-import { donationsSectionContent } from "./constants";
+import { donationsSectionContent, donationsSectionId } from "./constants";
 
 const DonationsSectionContent: React.FC<DonationsSectionContentProps> = ({
   text = donationsSectionContent.text,
@@ -13,6 +13,7 @@ const DonationsSectionContent: React.FC<DonationsSectionContentProps> = ({
   emojiSymbol = donationsSectionContent.emojiSymbol,
 }) => (
   <Section
+    id={donationsSectionId}
     text={text}
     title={title}
     buttonText={buttonText}
