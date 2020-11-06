@@ -8,7 +8,7 @@ export enum ButtonVariant {
 type ButtonElementAttributes = HTMLAttributes<HTMLButtonElement>;
 
 export interface ButtonProps extends Omit<ButtonElementAttributes, "className"> {
-  buttonContainerClassName?: string;
+  buttonWrapperClassName?: string;
   buttonElementClassName?: ButtonElementAttributes["className"];
   variant?: ButtonVariant;
 }

@@ -63,7 +63,7 @@ const Section: React.FC<SectionProps> = ({
                 </a>
               )}
             >
-              <Button buttonContainerClassName="mt-5 mx-auto w-full md:w-1/4">
+              <Button buttonWrapperClassName="mt-5 mx-auto">
                 {buttonText}
               </Button>
             </ConditionalWrap>
