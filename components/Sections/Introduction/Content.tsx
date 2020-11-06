@@ -35,7 +35,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       <ScrollLink to={missionSectionId}>
         <Button
           variant={ButtonVariant.Secondary}
-          buttonContainerClassName="mt-10 w-full md:w-22"
+          buttonWrapperClassName="mt-10 w-full md:w-22"
         >
           {buttonText}
         </Button>

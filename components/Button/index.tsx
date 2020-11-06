@@ -7,34 +7,36 @@ import { ButtonProps, ButtonVariant } from "./types";
 
 const Button: React.FC<ButtonProps> = ({
   buttonElementClassName,
-  buttonContainerClassName,
+  buttonWrapperClassName,
   variant = ButtonVariant.Primary,
   children,
   ...rest
 }) => {
-  const concatenateButtonElementClassNames = clsx([
+  const concatenateButtonElementClassNames = clsx(
     styles.element,
     styles.elementAnimation,
-    buttonElementClassName,
     buttonVariantsStyles[variant],
-  ]);
+    buttonElementClassName,
+  );
 
-  const concatenateButtonContainerClassNames = clsx([
-    styles.container,
-    buttonContainerClassName,
-  ]);
+  const concatenateButtonWrapperClassNames = clsx(
+    styles.wrapper,
+    buttonWrapperClassName,
+  );
 
   return (
-    <div role="button" className={concatenateButtonContainerClassNames}>
-      <button
-        type="button"
-        className={concatenateButtonElementClassNames}
-        {...rest}
-      >
-        {children}
+    <div className={concatenateButtonWrapperClassNames}>
+      <div role="button" className={styles.container}>
+        <button
+          type="button"
+          className={concatenateButtonElementClassNames}
+          {...rest}
+        >
+          {children}
 
-        <BsArrowRight className={styles.icon} />
-      </button>
+          <BsArrowRight className={styles.icon} />
+        </button>
+      </div>
     </div>
   );
 };

@@ -11,11 +11,11 @@ import { sectionStyles, sectionVariantsStyles } from "./styles";
 
 const Section: React.FC<SectionProps> = ({
   emojiSymbol,
-  className,
   buttonText,
   buttonLink,
-  variant = SectionVariant.Secondary,
+  className,
   children,
+  variant = SectionVariant.Secondary,
   title,
   text,
   ...rest
@@ -35,7 +35,7 @@ const Section: React.FC<SectionProps> = ({
         {
           emojiSymbol && (
             <Emoji
-              className="text-3xl mb-3"
+              className="inline-block text-3xl mb-3"
               symbol={emojiSymbol}
             />
           )
@@ -63,7 +63,7 @@ const Section: React.FC<SectionProps> = ({
                 </a>
               )}
             >
-              <Button buttonContainerClassName="mt-5 mx-auto w-full md:w-1/4">
+              <Button buttonWrapperClassName="mt-8 mx-auto">
                 {buttonText}
               </Button>
             </ConditionalWrap>
