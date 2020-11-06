@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { HideAt, ShowAt } from "react-with-breakpoints";
-import MaxWidthContainer from "components/MaxWidthContainer";
 
+import MaxWidthContainer from "components/MaxWidthContainer";
 import ScrollLink from "components/ScrollLink";
 
 import MobileNavbar from "./MobileNavbar";
