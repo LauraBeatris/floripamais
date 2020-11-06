@@ -18,3 +18,4 @@ export const footerContent = {
   email: "organizacaofloripamais@gmail.com",
 };
 
+export const footerId = "main-page-footer";
