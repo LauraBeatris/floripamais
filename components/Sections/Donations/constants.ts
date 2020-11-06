@@ -5,3 +5,5 @@ export const donationsSectionContent = {
   buttonLink: "https://docs.google.com/spreadsheets/d/1atVMG0EHRiqqIkoIDa1-cE1GIJ1Hg71otC2q7o6XjTg/edit?usp=sharing",
   emojiSymbol: "🔈",
 };
+
+export const donationsSectionId = "donations-section";
