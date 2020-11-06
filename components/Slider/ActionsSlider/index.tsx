@@ -14,6 +14,7 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
       formattedActions.map(({
         id,
         name,
+        buttonLink,
         description,
         formattedDate,
       }) => (
@@ -34,6 +35,7 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
             </p>
 
             <Button
+              buttonLink={buttonLink}
               buttonWrapperClassName="w-full"
               buttonElementClassName="text-xs"
             >

@@ -5,37 +5,37 @@ const nextActions = [];
 const previousActions: Action[] = [
   {
     id: 1,
-    link: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     name: "Ação 1",
     date: new Date(2020, 5, 1),
+    buttonLink: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id.",
   },
   {
     id: 2,
-    link: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     name: "Ação 2",
     date: new Date(2020, 5, 2),
+    buttonLink: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id.",
   },
   {
     id: 3,
-    link: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     name: "Ação 3",
     date: new Date(2020, 5, 3),
+    buttonLink: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id.",
   },
   {
     id: 4,
-    link: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     name: "Ação 4",
     date: new Date(2020, 5, 4),
+    buttonLink: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id.",
   },
   {
     id: 5,
-    link: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     name: "Ação 5",
     date: new Date(2020, 5, 5),
+    buttonLink: "https://www.instagram.com/p/CFX0OqcFb0Z/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id.",
   },
 ];

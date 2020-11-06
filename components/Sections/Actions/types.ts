@@ -4,7 +4,7 @@ export interface Action {
   id: number;
   name: string;
   date: Date;
-  link: string;
+  buttonLink: string;
   description: string;
 }
 
