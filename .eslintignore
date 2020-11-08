@@ -1,4 +1,4 @@
-# Lint all files except .eslintrc.js and node_modules
+# Lint all files except .eslintrc.js 
 !.eslintrc.js
 
 # Dependencies
