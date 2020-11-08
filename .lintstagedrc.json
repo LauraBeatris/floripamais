@@ -1,5 +1,5 @@
 {
-  "src/**/*.js": [
+  "src/**/*.{ts,tsx}": [
     "yarn linter",
     "git add"
   ]
