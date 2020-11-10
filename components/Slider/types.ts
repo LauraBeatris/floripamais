@@ -1,6 +1,3 @@
-export type SliderProps = Partial<{
-  speed: number;
-  infinite: boolean;
-  autoplay: boolean;
-  autoplaySpeed: number;
-}>;
+import { Settings } from "react-slick";
+
+export type SliderProps = Settings;
