@@ -4,7 +4,7 @@ import clsx from "clsx";
 import MaxWidthContainer from "components/MaxWidthContainer";
 
 import { FooterContentProps, FooterContentItemProps } from "./types";
-import { footerContent } from "./constants";
+import { footerContent, footerId } from "./constants";
 
 const FooterContentItem: React.FC<FooterContentItemProps> = ({
   title,
@@ -30,7 +30,10 @@ const FooterContent: React.FC<FooterContentProps> = ({
   const socialMediaLinkClasses = clsx([subtitleClassName, "footer-social-media-link"]);
 
   return (
-    <footer className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32">
+    <footer
+      id={footerId}
+      className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32"
+    >
       <MaxWidthContainer className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <FooterContentItem title={footerSocialMediasTitle}>
           <ul className="w-full flex">

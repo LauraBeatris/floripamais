@@ -1,3 +1,4 @@
+import { actionsSectionId } from "components/Sections/Actions/constants";
 import { donationsSectionId } from "components/Sections/Donations/constants";
 import { missionSectionId } from "components/Sections/Mission/constants";
 
@@ -9,7 +10,7 @@ import { missionSectionId } from "components/Sections/Mission/constants";
 export const headerNavbarLinks = [
   {
     label: "Ações",
-    sectionId: "actions-section",
+    sectionId: actionsSectionId,
   },
   {
     label: "Doações",
@@ -28,3 +29,5 @@ export const headerNavbarLinks = [
     sectionId: "contact-section",
   },
 ];
+
+export const headerId = "main-page-header";

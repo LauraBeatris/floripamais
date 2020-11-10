@@ -27,7 +27,7 @@ const AchievementsSectionContent: React.FC<AchievementsSectionContentProps> = ({
   organizationsHelpedLabel = achievementsSectionContent.organizationsHelpedLabel,
   organizationsHelpedNumber = achievementsSectionContent.organizationsHelpedNumber,
 }) => (
-  <section className="flex text-center flex-col py-10 bg-black w-full">
+  <section className="flex text-center flex-col px-5 md:px-0 py-10 bg-black w-full">
     <MaxWidthContainer maxWidth="max-w-lg">
       <h1 className="text-white text-lg uppercase font-medium">
         {title}

@@ -35,6 +35,7 @@ module.exports = {
         "orange-200": "#FC9414",
         "orange-shade": shade(0.1, reuseColors["orange-100"]),
         "white-shade": "#F2F2F2",
+        "white-light": "#FAFAFA",
       },
       height: {
         ...reuseComponentsLengths,
@@ -47,6 +48,9 @@ module.exports = {
       },
       spacing: {
         ...reuseComponentsLengths,
+      },
+      minHeight: {
+        "slider-item": "24rem",
       },
     },
     fontFamily: {

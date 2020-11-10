@@ -1,7 +1,6 @@
 import React from "react";
 import clsx from "clsx";
 import Emoji from "a11y-react-emoji";
-import ConditionalWrap from "conditional-wrap";
 
 import Button from "components/Button";
 import MaxWidthContainer from "components/MaxWidthContainer";
@@ -51,22 +50,12 @@ const Section: React.FC<SectionProps> = ({
 
         {
           buttonText && (
-            <ConditionalWrap
-              condition={Boolean(buttonLink)}
-              wrap={(buttonChildren) => (
-                <a
-                  target="_blank"
-                  href={buttonLink}
-                  rel="noreferrer"
-                >
-                  {buttonChildren}
-                </a>
-              )}
+            <Button
+              buttonLink={buttonLink}
+              buttonWrapperClassName="mt-8 mx-auto"
             >
-              <Button buttonWrapperClassName="mt-8 mx-auto">
-                {buttonText}
-              </Button>
-            </ConditionalWrap>
+              {buttonText}
+            </Button>
           )
         }
 
