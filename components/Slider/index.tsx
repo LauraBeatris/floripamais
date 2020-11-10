@@ -5,15 +5,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { SliderProps } from "./types";
-import { sliderSettings } from "./constants";
+import { sliderSettings, infiniteSliderMinimumItemsNumber } from "./constants";
 
 const Slider: React.FC<SliderProps> = ({
   children,
   ...rest
-}) => (
-  <SlickSlider {...sliderSettings} {...rest}>
-    {children}
-  </SlickSlider>
-);
+}) => {
+  const infinite = (
+    children
+      ? React.Children.count(children) > infiniteSliderMinimumItemsNumber
+      : false
+  );
+
+  return (
+    <SlickSlider {...sliderSettings} infinite={infinite} {...rest}>
+      {children}
+    </SlickSlider>
+  );
+};
 
 export default Slider;
