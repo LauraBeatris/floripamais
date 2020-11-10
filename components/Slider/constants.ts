@@ -3,6 +3,8 @@ import { Settings } from "react-slick";
 import { tailwindBreakpoints } from "styles/tailwind";
 
 export const sliderSettings: Settings = {
+  dots: true,
+  arrows: false,
   infinite: false,
   autoplay: true,
   responsive: [
@@ -11,8 +13,6 @@ export const sliderSettings: Settings = {
       settings: {
         slidesToScroll: 1,
         slidesToShow: 1,
-        arrows: false,
-        dots: true,
       },
     },
     {
@@ -20,8 +20,6 @@ export const sliderSettings: Settings = {
       settings: {
         slidesToScroll: 2,
         slidesToShow: 2,
-        arrows: false,
-        dots: true,
       },
     },
   ],
