@@ -9,20 +9,20 @@ export const sliderSettings = {
       breakpoint: tailwindBreakpoints.small,
       settings: {
         slidesToShow: 1,
-        dots: true,
         arrows: false,
+        dots: true,
       },
     },
     {
       breakpoint: tailwindBreakpoints.large,
       settings: {
         slidesToShow: 2,
-        dots: true,
         arrows: false,
+        dots: true,
       },
     },
   ],
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   autoplaySpeed: 2000,
 };
