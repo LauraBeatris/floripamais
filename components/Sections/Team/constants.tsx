@@ -33,10 +33,10 @@ const members: Member[] = [
   },
 ];
 
-export const membersSectionContent = {
+export const teamSectionContent = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis sit massa id fermentum pellentesque rhoncus. Vestibulum cursus eu sed morbi volutpat. Adipiscing commodo, ac fusce tellus nisi, sapien eget. Interdum et sed ut pellentesque in aliquam gravida leo.",
-  title: "Membros",
+  title: "Equipe",
   members,
 };
 
-export const membersSectionId = "members-section";
+export const teamSectionId = "members-section";

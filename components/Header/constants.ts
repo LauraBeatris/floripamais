@@ -1,7 +1,7 @@
 import { footerId } from "components/Footer/constants";
 import { actionsSectionId } from "components/Sections/Actions/constants";
 import { donationsSectionId } from "components/Sections/Donations/constants";
-import { membersSectionId } from "components/Sections/Members/constants";
+import { teamSectionId } from "components/Sections/Team/constants";
 import { missionSectionId } from "components/Sections/Mission/constants";
 
 /**
@@ -24,7 +24,7 @@ export const headerNavbarLinks = [
   },
   {
     label: "Equipe",
-    sectionId: membersSectionId,
+    sectionId: teamSectionId,
   },
   {
     label: "Contato",

@@ -6,6 +6,6 @@ export interface Member {
   photoUrl: string;
 }
 
-export interface MembersSectionContentProps extends Partial<SectionProps> {
+export interface TeamSectionContentProps extends Partial<SectionProps> {
   members?: Member[];
 }
