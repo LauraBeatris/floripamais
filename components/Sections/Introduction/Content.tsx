@@ -21,6 +21,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
   >
     <Image
       src={backgroundSrc}
+      alt="Florianópolis"
       className="absolute z-10 object-cover object-center h-full w-full"
       layout="fill"
       quality={100}

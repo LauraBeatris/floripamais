@@ -15,6 +15,17 @@
   text-decoration: none;
 }
 
+#introduction-section::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: 10;
+  position: absolute;
+  background: rgba(0, 0, 0, .5);
+}
+
 /** Libraries Overrides **/
 .slick-track {
   margin-left: inset !important;
