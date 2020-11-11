@@ -18,9 +18,11 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
   }, []);
 
   return (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <Link
       to={to}
       smooth
+      href=""
       spy
       offset={headerHeight}
       duration={duration}
