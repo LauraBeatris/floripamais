@@ -19,7 +19,7 @@ const FooterContentItem: React.FC<FooterContentItemProps> = ({
 
 const subtitleClassName = "break-words text-black max-w-full";
 
-const underlineSubtitleClassName = "hover:border-b-2 border-black";
+const borderSubtitleClassName = "hover:border-b-2 border-black";
 
 const FooterContent: React.FC<FooterContentProps> = ({
   footerSocialMediasTitle = footerContent.socialMediasTitle,
@@ -31,7 +31,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
 
   const socialMediaLinkClasses = clsx(subtitleClassName, "footer-social-media-link");
 
-  const contactEmailClasses = clsx(subtitleClassName, underlineSubtitleClassName);
+  const contactEmailClasses = clsx(subtitleClassName, borderSubtitleClassName);
 
   return (
     <footer
@@ -48,7 +48,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
                   href={socialMedia.href}
                   className={socialMediaLinkClasses}
                 >
-                  <span className={underlineSubtitleClassName}>
+                  <span className={borderSubtitleClassName}>
                     {socialMedia.label}
                   </span>
                 </a>
