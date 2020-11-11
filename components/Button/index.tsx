@@ -40,7 +40,7 @@ const Button: React.FC<ButtonProps> = ({
         )}
         condition={Boolean(buttonLink)}
       >
-        <div role="button" className={styles.container}>
+        <div className={styles.container}>
           <button
             type="button"
             className={concatenateButtonElementClassNames}
