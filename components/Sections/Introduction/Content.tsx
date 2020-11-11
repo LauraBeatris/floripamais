@@ -33,7 +33,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       </h1>
 
       <ScrollLink to={missionSectionId}>
-        <Button buttonWrapperClassName="mt-10 w-full md:w-22">
+        <Button tabIndex={-1} buttonWrapperClassName="mt-10 w-full md:w-22">
           {buttonText}
         </Button>
       </ScrollLink>
