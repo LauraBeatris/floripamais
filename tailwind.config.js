@@ -4,7 +4,7 @@ const { shade } = require("polished");
 const purgeExtensions = "*.{js,ts,jsx,tsx}";
 
 const reuseColors = {
-  "orange-100": "#FB8F0A",
+  "orange-100": "#D77600",
 };
 
 const reuseComponentsLengths = {
