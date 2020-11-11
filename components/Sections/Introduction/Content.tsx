@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import MaxWidthContainer from "components/MaxWidthContainer";
 import Button from "components/Button";
-import { ButtonVariant } from "components/Button/types";
 import ScrollLink from "components/ScrollLink";
 
 import { IntroductionSectionContentProps } from "./types";
@@ -34,10 +33,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       </h1>
 
       <ScrollLink to={missionSectionId}>
-        <Button
-          variant={ButtonVariant.Secondary}
-          buttonWrapperClassName="mt-10 w-full md:w-22"
-        >
+        <Button buttonWrapperClassName="mt-10 w-full md:w-22">
           {buttonText}
         </Button>
       </ScrollLink>

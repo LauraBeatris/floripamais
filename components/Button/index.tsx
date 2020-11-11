@@ -3,21 +3,19 @@ import clsx from "clsx";
 import ConditionalWrap from "conditional-wrap";
 import { BsArrowRight } from "react-icons/bs";
 
-import styles, { buttonVariantsStyles } from "./styles";
-import { ButtonProps, ButtonVariant } from "./types";
+import styles from "./styles";
+import { ButtonProps } from "./types";
 
 const Button: React.FC<ButtonProps> = ({
   buttonElementClassName,
   buttonWrapperClassName,
   buttonLink,
-  variant = ButtonVariant.Primary,
   children,
   ...rest
 }) => {
   const concatenateButtonElementClassNames = clsx(
     styles.element,
     styles.elementAnimation,
-    buttonVariantsStyles[variant],
     buttonElementClassName,
   );
 
