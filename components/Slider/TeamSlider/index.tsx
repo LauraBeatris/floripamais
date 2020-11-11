@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import Slider from "components/Slider";
 
-import { MembersSliderProps } from "./types";
+import { TeamSliderProps } from "./types";
 
-const MembersSlider: React.FC<MembersSliderProps> = ({
+const TeamSlider: React.FC<TeamSliderProps> = ({
   members,
 }) => (
   <Slider
@@ -42,4 +42,4 @@ const MembersSlider: React.FC<MembersSliderProps> = ({
   </Slider>
 );
 
-export default MembersSlider;
+export default TeamSlider;

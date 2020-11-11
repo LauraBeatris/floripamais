@@ -1,5 +1,5 @@
 import { Member } from "components/Sections/Team/types";
 
-export interface MembersSliderProps {
+export interface TeamSliderProps {
   members: Member[];
 }
