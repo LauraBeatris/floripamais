@@ -20,7 +20,7 @@ const MembersSlider: React.FC<MembersSliderProps> = ({
       photoUrl,
     }) => (
       <div className="py-2" key={id}>
-        <div className="shadow-md min-h-slider-item text-left flex flex-col justify-between items-start text-black bg-white-light rounded-lg mx-2 p-5">
+        <div className="min-h-slider-item text-left flex flex-col justify-between items-start text-black bg-white-light rounded-lg mx-2 p-5">
           <header className="w-full">
             <h5 className="text-2xl font-semibold">
               {name}
