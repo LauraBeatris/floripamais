@@ -24,6 +24,8 @@ const Button: React.FC<ButtonProps> = ({
     buttonWrapperClassName,
   );
 
+  const buttonTabIndex = buttonLink && -1;
+
   return (
     <div className={concatenateButtonWrapperClassNames}>
       <ConditionalWrap
@@ -41,6 +43,7 @@ const Button: React.FC<ButtonProps> = ({
         <div className={styles.container}>
           <button
             type="button"
+            tabIndex={buttonTabIndex}
             className={concatenateButtonElementClassNames}
             {...rest}
           >
