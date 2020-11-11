@@ -17,13 +17,14 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
     setHeaderHeight(-(document?.querySelector<HTMLElement>(`#${headerId}`)?.offsetHeight));
   }, []);
 
+  const buttonHref = `#${to}`;
+
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <Link
       to={to}
       smooth
-      href=""
       spy
+      href={buttonHref}
       offset={headerHeight}
       duration={duration}
       tabIndex={0}
