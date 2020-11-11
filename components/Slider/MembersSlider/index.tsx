@@ -33,6 +33,7 @@ const MembersSlider: React.FC<MembersSliderProps> = ({
               alt={name}
               className="rounded-lg absolute top-0 bottom-0 right-0 left-0 w-full h-full object-cover"
               layout="fill"
+              loading="eager"
             />
           </div>
         </div>
