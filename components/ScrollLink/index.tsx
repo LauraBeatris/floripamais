@@ -27,7 +27,6 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
       href={buttonHref}
       offset={headerHeight}
       duration={duration}
-      tabIndex={0}
       {...rest}
     >
       {children}
