@@ -1,8 +1,8 @@
 import { footerId } from "components/Footer/constants";
-import { actionsSectionId } from "components/Sections/Actions/constants";
-import { donationsSectionId } from "components/Sections/Donations/constants";
 import { teamSectionId } from "components/Sections/Team/constants";
+import { actionsSectionId } from "components/Sections/Actions/constants";
 import { missionSectionId } from "components/Sections/Mission/constants";
+import { donationsSectionId } from "components/Sections/Donations/constants";
 
 /**
  * Defines the links to be show on the header navbar

@@ -39,4 +39,4 @@ export const teamSectionContent = {
   members,
 };
 
-export const teamSectionId = "members-section";
+export const teamSectionId = "team-section";

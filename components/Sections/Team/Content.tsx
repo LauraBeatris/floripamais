@@ -1,6 +1,6 @@
 import React from "react";
 
-import MembersSlider from "components/Slider/MembersSlider";
+import TeamSlider from "components/Slider/TeamSlider";
 import Section from "components/Sections/Section";
 
 import { TeamSectionContentProps } from "./types";
@@ -17,7 +17,7 @@ const TeamSectionContent: React.FC<TeamSectionContentProps> = ({
     text={text}
   >
     <div className="w-full mt-12">
-      <MembersSlider members={members} />
+      <TeamSlider members={members} />
     </div>
   </Section>
 );
