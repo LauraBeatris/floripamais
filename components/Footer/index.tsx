@@ -1,9 +1,9 @@
 import React from "react";
 
-import Content from "./Content";
+import FooterContent from "./Content";
 
 const Footer: React.FC = () => (
-  <Content />
+  <FooterContent />
 );
 
 export default Footer;
