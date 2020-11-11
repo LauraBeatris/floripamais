@@ -24,6 +24,7 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
       spy
       offset={headerHeight}
       duration={duration}
+      tabIndex={0}
       {...rest}
     >
       {children}
