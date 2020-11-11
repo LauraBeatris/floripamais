@@ -6,7 +6,6 @@ export const sliderSettings: Settings = {
   dots: true,
   arrows: false,
   infinite: false,
-  autoplay: true,
   responsive: [
     {
       breakpoint: tailwindBreakpoints.small,
@@ -25,6 +24,6 @@ export const sliderSettings: Settings = {
   ],
   slidesToShow: 3,
   slidesToScroll: 3,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 500,
 };
 

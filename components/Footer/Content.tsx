@@ -17,7 +17,9 @@ const FooterContentItem: React.FC<FooterContentItemProps> = ({
   </div>
 );
 
-const subtitleClassName = "break-words text-white max-w-full";
+const subtitleClassName = "break-words text-black max-w-full";
+
+const borderSubtitleClassName = "hover:border-b-2 border-black";
 
 const FooterContent: React.FC<FooterContentProps> = ({
   footerSocialMediasTitle = footerContent.socialMediasTitle,
@@ -27,12 +29,14 @@ const FooterContent: React.FC<FooterContentProps> = ({
 }) => {
   const mailTo = `mailto:${email}`;
 
-  const socialMediaLinkClasses = clsx([subtitleClassName, "footer-social-media-link"]);
+  const socialMediaLinkClasses = clsx(subtitleClassName, "footer-social-media-link");
+
+  const contactEmailClasses = clsx(subtitleClassName, borderSubtitleClassName);
 
   return (
     <footer
       id={footerId}
-      className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32"
+      className="mt-auto w-screen bg-white-light py-10 px-5 md:py-16 md:px-32"
     >
       <MaxWidthContainer className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <FooterContentItem title={footerSocialMediasTitle}>
@@ -44,7 +48,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
                   href={socialMedia.href}
                   className={socialMediaLinkClasses}
                 >
-                  <span className="hover:border-b-2">
+                  <span className={borderSubtitleClassName}>
                     {socialMedia.label}
                   </span>
                 </a>
@@ -54,7 +58,9 @@ const FooterContent: React.FC<FooterContentProps> = ({
         </FooterContentItem>
 
         <FooterContentItem title={footerContactTitle}>
-          <a href={mailTo} className={subtitleClassName}>{email}</a>
+          <a href={mailTo} className={contactEmailClasses}>
+            {email}
+          </a>
         </FooterContentItem>
       </MaxWidthContainer>
     </footer>

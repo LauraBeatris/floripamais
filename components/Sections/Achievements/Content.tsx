@@ -9,12 +9,12 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
   achievedNumber,
   label,
 }) => (
-  <div className="flex flex-col px-8 md:px-0">
+  <div className="flex flex-col items-center md:px-0">
     <h2 className="text-white text-6xl font-bold">
       {achievedNumber}
     </h2>
 
-    <h3 className="text-white text-base uppercase font-medium">
+    <h3 className="text-white text-base uppercase font-medium w-24">
       {label}
     </h3>
   </div>

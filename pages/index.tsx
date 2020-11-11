@@ -5,6 +5,7 @@ import MissionSection from "components/Sections/Mission";
 import AchievementsSection from "components/Sections/Achievements";
 import DonationsSection from "components/Sections/Donations";
 import ActionsSection from "components/Sections/Actions";
+import TeamSection from "components/Sections/Team";
 
 const App: React.FC = () => (
   <>
@@ -17,6 +18,7 @@ const App: React.FC = () => (
       <ActionsSection />
       <DonationsSection />
       <MissionSection />
+      <TeamSection />
     </main>
   </>
 );

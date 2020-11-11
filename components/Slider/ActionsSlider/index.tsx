@@ -9,7 +9,7 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
   buttonText,
   formattedActions,
 }) => (
-  <Slider autoplay={false}>
+  <Slider>
     {
       formattedActions.map(({
         id,

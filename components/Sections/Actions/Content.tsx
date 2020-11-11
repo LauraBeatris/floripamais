@@ -7,7 +7,7 @@ import { footerId } from "components/Footer/constants";
 import ActionsSlider from "components/Slider/ActionsSlider";
 
 import { ActionsSectionSliderContainerProps, ActionsSectionContentProps } from "./types";
-import { actionsSectionContent } from "./constants";
+import { actionsSectionContent, actionsSectionId } from "./constants";
 import formatActions from "./formatActions";
 
 const ActionsSectionSliderContainer: React.FC<ActionsSectionSliderContainerProps> = ({
@@ -61,6 +61,7 @@ const ActionsSectionContent: React.FC<ActionsSectionContentProps> = ({
   previousActionsSubtitle = actionsSectionContent.previousActionsSubtitle,
 }) => (
   <Section
+    id={actionsSectionId}
     text={text}
     title={title}
     variant={SectionVariant.Primary}
