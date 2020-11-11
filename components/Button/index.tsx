@@ -48,7 +48,7 @@ const Button: React.FC<ButtonProps> = ({
           >
             {children}
 
-            <BsArrowRight className={styles.icon} />
+            <BsArrowRight aria-hidden className={styles.icon} />
           </button>
         </div>
       </ConditionalWrap>
