@@ -10,7 +10,6 @@ const MembersSlider: React.FC<MembersSliderProps> = ({
 }) => (
   <Slider
     pauseOnHover={false}
-    autoplay
     infinite
     speed={5000}
   >
@@ -20,9 +19,9 @@ const MembersSlider: React.FC<MembersSliderProps> = ({
       photoUrl,
     }) => (
       <div className="py-2" key={id}>
-        <div className="min-h-slider-item text-left flex flex-col justify-between text-black bg-white-light rounded-lg mx-2 p-5">
-          <header className="w-full text-center">
-            <h5 className="text-2xl font-semibold">
+        <div className="min-h-slider-item flex flex-col justify-between text-black bg-white-light rounded-lg mx-2 p-5">
+          <header className="w-full">
+            <h5 className="text-2xl text-center font-semibold">
               {name}
             </h5>
           </header>
