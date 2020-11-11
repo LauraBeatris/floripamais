@@ -8,7 +8,12 @@ import { MembersSliderProps } from "./types";
 const MembersSlider: React.FC<MembersSliderProps> = ({
   members,
 }) => (
-  <Slider autoplay infinite speed={5000}>
+  <Slider
+    pauseOnHover={false}
+    autoplay
+    infinite
+    speed={5000}
+  >
     {members.map(({
       id,
       name,
