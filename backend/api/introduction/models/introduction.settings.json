@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "introduction",
+  "kind": "singleType",
+  "collectionName": "introductions",
   "info": {
-    "name": "Introduction",
-    "description": ""
+    "name": "Introduction"
   },
   "options": {
     "increments": true,
@@ -16,10 +15,12 @@
       "required": true
     },
     "buttonText": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "backgroundImageLink": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
