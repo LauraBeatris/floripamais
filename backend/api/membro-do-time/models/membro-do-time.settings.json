@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "name": "Membro do Time"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "photo_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

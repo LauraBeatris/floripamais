@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/membro-do-times",
+      "handler": "membro-do-time.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/membro-do-times/count",
+      "handler": "membro-do-time.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/membro-do-times/:id",
+      "handler": "membro-do-time.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/membro-do-times",
+      "handler": "membro-do-time.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/membro-do-times/:id",
+      "handler": "membro-do-time.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/membro-do-times/:id",
+      "handler": "membro-do-time.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
