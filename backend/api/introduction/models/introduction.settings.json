@@ -1,8 +1,9 @@
 {
   "kind": "singleType",
-  "collectionName": "introductions",
+  "collectionName": "introduction",
   "info": {
-    "name": "Introduction"
+    "name": "Introduction Section",
+    "description": ""
   },
   "options": {
     "increments": true,
