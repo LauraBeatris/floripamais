@@ -15,11 +15,11 @@
       "type": "string",
       "required": true
     },
-    "buttonText": {
+    "button_text": {
       "type": "string",
       "required": true
     },
-    "backgroundImageLink": {
+    "background_image_link": {
       "type": "string",
       "required": true
     }

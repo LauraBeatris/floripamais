@@ -11,12 +11,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
     "achievements": {
-      "model": "achievements"
+      "collection": "achievements"
     }
   }
 }
