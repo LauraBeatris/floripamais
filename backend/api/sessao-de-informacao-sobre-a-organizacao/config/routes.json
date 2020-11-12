@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sessao-de-informacao-sobre-a-organizacao",
+      "handler": "sessao-de-informacao-sobre-a-organizacao.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sessao-de-informacao-sobre-a-organizacao",
+      "handler": "sessao-de-informacao-sobre-a-organizacao.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sessao-de-informacao-sobre-a-organizacao",
+      "handler": "sessao-de-informacao-sobre-a-organizacao.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
