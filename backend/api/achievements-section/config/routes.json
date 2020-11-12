@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/achievements-section",
+      "handler": "achievements-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/achievements-section",
+      "handler": "achievements-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/achievements-section",
+      "handler": "achievements-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

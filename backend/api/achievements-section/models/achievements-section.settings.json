@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "achievements_sections",
+  "info": {
+    "name": "Achievements Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "achievements": {
+      "model": "achievements"
+    }
+  }
+}
