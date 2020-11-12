@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "achievements_sections",
   "info": {
-    "name": "Achievements Section"
+    "name": "Achievements Section",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,8 @@
   },
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "achievements": {
       "model": "achievements"
