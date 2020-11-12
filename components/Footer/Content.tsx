@@ -23,7 +23,7 @@ const borderSubtitleClassName = "hover:border-b-2 border-black";
 
 const FooterContent: React.FC<FooterContentProps> = ({
   footerSocialMediasTitle = footerContent.socialMediasTitle,
-  footerContactTitle = footerContent.contactTitle,
+  footerContactEmailTitle = footerContent.contactEmailTitle,
   socialMedias = footerContent.socialMedias,
   contactEmail = footerContent.contactEmail,
 }) => {
@@ -59,7 +59,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
           </ul>
         </FooterContentItem>
 
-        <FooterContentItem title={footerContactTitle}>
+        <FooterContentItem title={footerContactEmailTitle}>
           <a href={mailTo} className={contactLinkClasses}>
             {contactEmail}
           </a>

@@ -13,7 +13,7 @@ const socialMedias: SocialMedia[] = [
 
 export const footerContent = {
   socialMediasTitle: "Conecte-se",
-  contactTitle: "Contato",
+  contactEmailTitle: "Contato",
   socialMedias,
   contactEmail: "organizacaofloripamais@gmail.com",
 };
