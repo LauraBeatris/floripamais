@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/footer",
+      "path": "/footer-content",
       "handler": "footer.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/footer",
+      "path": "/footer-content",
       "handler": "footer.update",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/footer",
+      "path": "/footer-content",
       "handler": "footer.delete",
       "config": {
         "policies": []

@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/introduction",
+      "path": "/introduction-section",
       "handler": "introduction.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/introduction",
+      "path": "/introduction-section",
       "handler": "introduction.update",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/introduction",
+      "path": "/introduction-section",
       "handler": "introduction.delete",
       "config": {
         "policies": []

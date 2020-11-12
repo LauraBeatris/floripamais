@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/informacoes-sobre-a-organizacaos",
+      "path": "/org-info",
       "handler": "informacoes-sobre-a-organizacao.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/informacoes-sobre-a-organizacaos/count",
+      "path": "/org-info/count",
       "handler": "informacoes-sobre-a-organizacao.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/informacoes-sobre-a-organizacaos/:id",
+      "path": "/org-info/:id",
       "handler": "informacoes-sobre-a-organizacao.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/informacoes-sobre-a-organizacaos",
+      "path": "/org-info",
       "handler": "informacoes-sobre-a-organizacao.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/informacoes-sobre-a-organizacaos/:id",
+      "path": "/org-info/:id",
       "handler": "informacoes-sobre-a-organizacao.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/informacoes-sobre-a-organizacaos/:id",
+      "path": "/org-info/:id",
       "handler": "informacoes-sobre-a-organizacao.delete",
       "config": {
         "policies": []
