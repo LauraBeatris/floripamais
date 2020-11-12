@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_content",
+  "info": {
+    "name": "Conteúdo do Footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contact_title": {
+      "type": "string",
+      "required": true
+    },
+    "social_medias_title": {
+      "type": "string",
+      "required": true
+    },
+    "contact_email": {
+      "type": "email"
+    },
+    "social_medias": {
+      "collection": "rede-social"
+    }
+  }
+}
