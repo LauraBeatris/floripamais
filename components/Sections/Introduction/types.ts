@@ -1,5 +1,5 @@
 export interface IntroductionSectionContentProps {
-  backgroundSrc?: string;
+  backgroundImageLink?: string;
   buttonText?: string;
   title?: string;
 }

@@ -10,7 +10,7 @@ import { introductionSectionId, introductionSectionContent } from "./constants";
 import { missionSectionId } from "../Mission/constants";
 
 const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
-  backgroundSrc = introductionSectionContent.backgroundSrc,
+  backgroundImageLink = introductionSectionContent.backgroundImageLink,
   buttonText = introductionSectionContent.buttonText,
   title = introductionSectionContent.title,
 }) => (
@@ -19,7 +19,7 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
     className="flex items-center py-10 px-5 md:p-20 relative h-section-introduction-mobile md:h-section-introduction-desktop bg-white"
   >
     <Image
-      src={backgroundSrc}
+      src={backgroundImageLink}
       alt="Florianópolis"
       className="absolute z-10 object-cover object-center h-full w-full"
       layout="fill"
