@@ -43,9 +43,10 @@ const NavbarMobile: React.FC = () => {
   return (
     <>
       <button
+        aria-label="Button to open navbar"
         className="flex items-center cursor-pointer bg-none border-none outline-none focus:outline-none"
-        type="button"
         onClick={openNavbarMobile}
+        type="button"
       >
         <Image
           src="/icons/navbarButton.png"

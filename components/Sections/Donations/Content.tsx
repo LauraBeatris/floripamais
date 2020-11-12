@@ -9,7 +9,7 @@ const DonationsSectionContent: React.FC<DonationsSectionContentProps> = ({
   text = donationsSectionContent.text,
   title = donationsSectionContent.title,
   buttonText = donationsSectionContent.buttonText,
-  buttonLink = donationsSectionContent.buttonLink,
+  touchableHref = donationsSectionContent.touchableHref,
   emojiSymbol = donationsSectionContent.emojiSymbol,
 }) => (
   <Section
@@ -17,7 +17,7 @@ const DonationsSectionContent: React.FC<DonationsSectionContentProps> = ({
     text={text}
     title={title}
     buttonText={buttonText}
-    buttonLink={buttonLink}
+    touchableHref={touchableHref}
     emojiSymbol={emojiSymbol}
   />
 );

@@ -17,11 +17,14 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({
     setHeaderHeight(-(document?.querySelector<HTMLElement>(`#${headerId}`)?.offsetHeight));
   }, []);
 
+  const buttonHref = `#${to}`;
+
   return (
     <Link
       to={to}
       smooth
       spy
+      href={buttonHref}
       offset={headerHeight}
       duration={duration}
       {...rest}

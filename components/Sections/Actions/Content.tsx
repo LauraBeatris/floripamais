@@ -36,7 +36,7 @@ const ActionsSectionSliderContainer: React.FC<ActionsSectionSliderContainerProps
             Não há ações no momento, mas nos siga nas
             {" "}
             <ScrollLink
-              className="cursor-pointer hover:underline text-orange-100 font-medium"
+              className="cursor-pointer hover:underline text-black font-semibold"
               to={footerId}
             >
               redes sociais

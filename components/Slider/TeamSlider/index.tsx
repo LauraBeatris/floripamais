@@ -11,8 +11,10 @@ const TeamSlider: React.FC<TeamSliderProps> = ({
   <Slider
     pauseOnHover={false}
     autoplay
+    arrows={false}
     infinite
     speed={5000}
+    dots={false}
   >
     {members.map(({
       id,

@@ -8,7 +8,7 @@ export enum SectionVariant {
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   emojiSymbol?: string;
   buttonText?: string;
-  buttonLink?: string;
+  touchableHref?: string;
   variant?: SectionVariant;
   title: string;
   text: string;

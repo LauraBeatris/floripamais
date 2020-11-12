@@ -44,8 +44,10 @@ const FooterContent: React.FC<FooterContentProps> = ({
             {
               socialMedias.map(socialMedia => (
                 <a
+                  rel="noreferrer"
                   key={socialMedia.href}
                   href={socialMedia.href}
+                  target="_blank"
                   className={socialMediaLinkClasses}
                 >
                   <span className={borderSubtitleClassName}>
