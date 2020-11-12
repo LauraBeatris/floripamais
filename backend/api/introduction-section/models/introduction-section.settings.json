@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "introduction_section",
+  "info": {
+    "name": "Sessäo Introdutória",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "button_text": {
+      "type": "string",
+      "required": true
+    },
+    "background_image_link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
