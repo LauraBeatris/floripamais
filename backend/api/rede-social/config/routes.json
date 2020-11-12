@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rede-socials",
+      "handler": "rede-social.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rede-socials/count",
+      "handler": "rede-social.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rede-socials/:id",
+      "handler": "rede-social.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rede-socials",
+      "handler": "rede-social.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rede-socials/:id",
+      "handler": "rede-social.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rede-socials/:id",
+      "handler": "rede-social.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
