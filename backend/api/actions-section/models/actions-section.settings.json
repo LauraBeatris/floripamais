@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "actions_sections",
+  "info": {
+    "name": "Actions Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "next_actions": {
+      "collection": "actions"
+    },
+    "previous_actions": {
+      "collection": "actions"
+    },
+    "action_button_text": {
+      "type": "string",
+      "required": true
+    },
+    "no_actions_found_text": {
+      "type": "string",
+      "required": true
+    },
+    "next_actions_subtitle": {
+      "type": "string"
+    },
+    "previous_actions_subtitle": {
+      "type": "string"
+    }
+  }
+}
