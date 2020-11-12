@@ -25,9 +25,9 @@ const FooterContent: React.FC<FooterContentProps> = ({
   footerSocialMediasTitle = footerContent.socialMediasTitle,
   footerContactTitle = footerContent.contactTitle,
   socialMedias = footerContent.socialMedias,
-  email = footerContent.email,
+  contactEmail = footerContent.contactEmail,
 }) => {
-  const mailTo = `mailto:${email}`;
+  const mailTo = `mailto:${contactEmail}`;
 
   const socialMediaLinkClasses = clsx(subtitleClassName, "footer-social-media-link");
 
@@ -61,7 +61,7 @@ const FooterContent: React.FC<FooterContentProps> = ({
 
         <FooterContentItem title={footerContactTitle}>
           <a href={mailTo} className={contactLinkClasses}>
-            {email}
+            {contactEmail}
           </a>
         </FooterContentItem>
       </MaxWidthContainer>

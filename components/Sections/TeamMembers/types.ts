@@ -1,11 +1,11 @@
 import { SectionProps } from "components/Sections/Section/types";
 
-export interface Member {
+export interface TeamMember {
   id: number;
   name: string;
   photoUrl: string;
 }
 
 export interface TeamMembersSectionContentProps extends Partial<SectionProps> {
-  members?: Member[];
+  members?: TeamMember[];
 }

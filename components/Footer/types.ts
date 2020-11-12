@@ -7,7 +7,7 @@ export interface FooterContentProps {
   footerSocialMediasTitle?: string;
   footerContactTitle?: string;
   socialMedias?: SocialMedia[];
-  email?: string;
+  contactEmail?: string;
 }
 
 export interface FooterContentItemProps {

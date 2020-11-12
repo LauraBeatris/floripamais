@@ -9,7 +9,7 @@ import { teamMembersSectionContent, teamMembersSectionId } from "./constants";
 const TeamMembersSectionContent: React.FC<TeamMembersSectionContentProps> = ({
   text = teamMembersSectionContent.text,
   title = teamMembersSectionContent.title,
-  members = teamMembersSectionContent.members,
+  members = teamMembersSectionContent.teamMembers,
 }) => (
   <Section
     id={teamMembersSectionId}

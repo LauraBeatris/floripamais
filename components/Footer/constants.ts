@@ -15,7 +15,7 @@ export const footerContent = {
   socialMediasTitle: "Conecte-se",
   contactTitle: "Contato",
   socialMedias,
-  email: "organizacaofloripamais@gmail.com",
+  contactEmail: "organizacaofloripamais@gmail.com",
 };
 
 export const footerId = "main-page-footer";
