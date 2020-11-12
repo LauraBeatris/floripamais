@@ -1,7 +1,7 @@
 import React from "react";
 
 import Slider from "components/Slider";
-import Button from "components/Button";
+import Touchable from "components/Touchable";
 
 import { ActionsSliderProps } from "./types";
 
@@ -14,7 +14,7 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
       formattedActions.map(({
         id,
         name,
-        buttonLink,
+        touchableHref,
         description,
         formattedDate,
       }) => (
@@ -34,13 +34,13 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
               {description}
             </p>
 
-            <Button
-              buttonLink={buttonLink}
-              buttonWrapperClassName="w-full"
-              buttonElementClassName="text-xs"
+            <Touchable
+              touchableHref={touchableHref}
+              touchableWrapperClassName="w-full"
+              touchableElementClassName="text-xs"
             >
               {buttonText}
-            </Button>
+            </Touchable>
           </div>
         </div>
       ))

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import MaxWidthContainer from "components/MaxWidthContainer";
-import Button from "components/Button";
+import Touchable from "components/Touchable";
 import ScrollLink from "components/ScrollLink";
 
 import { IntroductionSectionContentProps } from "./types";
@@ -33,9 +33,9 @@ const IntroductionSectionContent: React.FC<IntroductionSectionContentProps> = ({
       </h1>
 
       <ScrollLink to={missionSectionId}>
-        <Button tabIndex={-1} buttonWrapperClassName="mt-10 w-full md:w-22">
+        <Touchable tabIndex={-1} touchableWrapperClassName="mt-10 w-full md:w-22">
           {buttonText}
-        </Button>
+        </Touchable>
       </ScrollLink>
     </MaxWidthContainer>
   </section>

@@ -4,7 +4,7 @@ export interface Action {
   id: number;
   name: string;
   date: Date;
-  buttonLink: string;
+  touchableHref: string;
   description: string;
 }
 

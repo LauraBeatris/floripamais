@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import Emoji from "a11y-react-emoji";
 
-import Button from "components/Button";
+import Touchable from "components/Touchable";
 import MaxWidthContainer from "components/MaxWidthContainer";
 
 import { SectionProps, SectionVariant } from "./types";
@@ -11,7 +11,7 @@ import { sectionStyles, sectionVariantsStyles } from "./styles";
 const Section: React.FC<SectionProps> = ({
   emojiSymbol,
   buttonText,
-  buttonLink,
+  touchableHref,
   className,
   children,
   variant = SectionVariant.Secondary,
@@ -50,12 +50,12 @@ const Section: React.FC<SectionProps> = ({
 
         {
           buttonText && (
-            <Button
-              buttonLink={buttonLink}
-              buttonWrapperClassName="mt-8 mx-auto"
+            <Touchable
+              touchableHref={touchableHref}
+              touchableWrapperClassName="mt-8 mx-auto"
             >
               {buttonText}
-            </Button>
+            </Touchable>
           )
         }
 

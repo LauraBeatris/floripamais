@@ -1,4 +1,4 @@
-const buttonStyles = {
+const touchableStyles = {
   icon: "text-2xl ml-8",
 
   wrapper: "inline-block",
@@ -10,4 +10,4 @@ const buttonStyles = {
   elementAnimation: "transform transition-transform duration-200 md:hover:translate-x-6 hover:translate-x-0",
 };
 
-export default buttonStyles;
+export default touchableStyles;

@@ -3,24 +3,24 @@ import clsx from "clsx";
 import { BsArrowRight } from "react-icons/bs";
 
 import styles from "./styles";
-import { ButtonProps } from "./types";
+import { TouchableProps } from "./types";
 
-const Button: React.FC<ButtonProps> = ({
-  buttonElementClassName,
-  buttonWrapperClassName,
-  buttonLink,
+const Touchable: React.FC<TouchableProps> = ({
+  touchableElementClassName,
+  touchableWrapperClassName,
+  touchableHref,
   children,
   ...rest
 }) => {
   const concatenateButtonElementClassNames = clsx(
     styles.element,
     styles.elementAnimation,
-    buttonElementClassName,
+    touchableElementClassName,
   );
 
   const concatenateButtonWrapperClassNames = clsx(
     styles.wrapper,
-    buttonWrapperClassName,
+    touchableWrapperClassName,
   );
 
   const touchableContent = (
@@ -37,10 +37,10 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <div className={concatenateButtonWrapperClassNames}>
       <div className={styles.container}>
-        {buttonLink ? (
+        {touchableHref ? (
           <a
             target="_blank"
-            href={buttonLink}
+            href={touchableHref}
             rel="noreferrer"
             {...touchableAttributes}
           >
@@ -60,4 +60,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default Touchable;
