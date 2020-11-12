@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sessao-de-membros-do-time",
+      "handler": "sessao-de-membros-do-time.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sessao-de-membros-do-time",
+      "handler": "sessao-de-membros-do-time.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sessao-de-membros-do-time",
+      "handler": "sessao-de-membros-do-time.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
