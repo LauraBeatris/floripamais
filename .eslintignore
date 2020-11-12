@@ -9,3 +9,6 @@ out/
 
 # Backend
 backend
+
+# Generated Types from GraphQL schema
+generated

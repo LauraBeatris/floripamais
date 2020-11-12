@@ -8,15 +8,17 @@
     "start": "next start",
     "linter": "eslint ./pages --ext=.ts,.tsx",
     "check-types": "tsc --noemit",
-    "lint": "yarn run linter && yarn run check-types"
+    "lint": "yarn run linter && yarn run check-types",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "a11y-react-emoji": "^1.1.2",
     "autoprefixer": "9.8.6",
-    "axios": "^0.21.0",
     "clsx": "^1.1.1",
     "date-fns": "^2.16.1",
     "framer-motion": "^2.9.4",
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.3.0",
     "next": "^10.0.1",
     "next-seo": "^4.13.0",
     "polished": "^4.0.3",
@@ -32,6 +34,9 @@
     "use-onclickoutside": "^0.3.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.19.1",
+    "@graphql-codegen/typescript": "1.17.11",
+    "@graphql-codegen/typescript-operations": "1.17.9",
     "@jungsoft/eslint-config": "4.0.1",
     "@types/node": "^14.11.10",
     "@types/react": "^16.9.53",
