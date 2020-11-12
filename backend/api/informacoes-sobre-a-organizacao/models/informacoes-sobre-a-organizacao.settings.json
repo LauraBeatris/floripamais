@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "org_info",
+  "info": {
+    "name": "Informações da organizaçāo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "emoji_symbol": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
