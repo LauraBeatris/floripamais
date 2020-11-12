@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "actions",
   "info": {
-    "name": "Actions",
+    "name": "Ações",
     "description": ""
   },
   "options": {
@@ -19,7 +19,7 @@
       "type": "datetime",
       "required": true
     },
-    "actionLink": {
+    "action_link": {
       "type": "string",
       "private": false,
       "required": true
