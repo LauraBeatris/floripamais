@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "team_members",
   "info": {
-    "name": "Membro do Time"
+    "name": "Membro do Time",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,16 @@
       "type": "string",
       "required": true
     },
-    "photo_url": {
-      "type": "string",
-      "required": true
+    "member_photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
