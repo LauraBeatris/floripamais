@@ -2414,11 +2414,6 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-conditional-wrap@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/conditional-wrap/-/conditional-wrap-1.0.2.tgz#a993fd402e7747d83d1e36c675175f89852c25e5"
-  integrity sha512-jaL1qJC7JImOXiWC4/OxrSMjbPSZG+tWj2VmUtdBOOQhJj0gbFoDCF2Y0F5xLgQUpg+CDSymssaTX+Vn+1yM3Q==
-
 confusing-browser-globals@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
