@@ -1,6 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import ConditionalWrap from "conditional-wrap";
 import { BsArrowRight } from "react-icons/bs";
 
 import styles from "./styles";
@@ -24,35 +23,39 @@ const Button: React.FC<ButtonProps> = ({
     buttonWrapperClassName,
   );
 
-  const buttonTabIndex = buttonLink && -1;
+  const touchableContent = (
+    <>
+      {children}
+      <BsArrowRight aria-hidden className={styles.icon} />
+    </>
+  );
+
+  const touchableAttributes = {
+    className: concatenateButtonElementClassNames,
+  };
 
   return (
     <div className={concatenateButtonWrapperClassNames}>
-      <ConditionalWrap
-        wrap={(buttonChildren) => (
+      <div className={styles.container}>
+        {buttonLink ? (
           <a
             target="_blank"
             href={buttonLink}
             rel="noreferrer"
+            {...touchableAttributes}
           >
-            {buttonChildren}
+            {touchableContent}
           </a>
-        )}
-        condition={Boolean(buttonLink)}
-      >
-        <div className={styles.container}>
+        ) : (
           <button
             type="button"
-            tabIndex={buttonTabIndex}
-            className={concatenateButtonElementClassNames}
+            {...touchableAttributes}
             {...rest}
           >
-            {children}
-
-            <BsArrowRight aria-hidden className={styles.icon} />
+            {touchableContent}
           </button>
-        </div>
-      </ConditionalWrap>
+        )}
+      </div>
     </div>
   );
 };
