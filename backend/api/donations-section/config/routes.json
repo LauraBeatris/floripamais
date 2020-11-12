@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/donations-section",
+      "handler": "donations-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/donations-section",
+      "handler": "donations-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/donations-section",
+      "handler": "donations-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

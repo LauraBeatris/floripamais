@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "donations_sections",
+  "info": {
+    "name": "Donations Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "sheetLink": {
+      "type": "string",
+      "required": true
+    },
+    "emojiSymbol": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
