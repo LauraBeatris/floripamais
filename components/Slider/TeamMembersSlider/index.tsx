@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import Slider from "components/Slider";
 
-import { TeamSliderProps } from "./types";
+import { TeamMembersSliderProps } from "./types";
 
-const TeamSlider: React.FC<TeamSliderProps> = ({
-  members,
+const TeamMembersSlider: React.FC<TeamMembersSliderProps> = ({
+  teamMembers,
 }) => (
   <Slider
     pauseOnHover={false}
@@ -16,7 +16,7 @@ const TeamSlider: React.FC<TeamSliderProps> = ({
     speed={5000}
     dots={false}
   >
-    {members.map(({
+    {teamMembers.map(({
       id,
       name,
       photoUrl,
@@ -44,4 +44,4 @@ const TeamSlider: React.FC<TeamSliderProps> = ({
   </Slider>
 );
 
-export default TeamSlider;
+export default TeamMembersSlider;

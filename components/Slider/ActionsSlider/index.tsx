@@ -14,29 +14,29 @@ const ActionsSlider: React.FC<ActionsSliderProps> = ({
       formattedActions.map(({
         id,
         name,
-        touchableHref,
+        actionLink,
         description,
         formattedDate,
       }) => (
         <div className="py-2" key={id}>
-          <div className="shadow-md min-h-slider-item text-left flex flex-col justify-between items-start text-black bg-white-light rounded-lg mx-2 p-5">
+          <div className="shadow-md min-h-slider-item text-left flex flex-col items-start text-black bg-white-light rounded-lg mx-2 p-5">
             <header className="w-full">
               <small className="font-semibold text-xs">
                 {formattedDate}
               </small>
 
-              <h5 className="text-2xl font-semibold">
+              <h5 className="truncate max-w-full text-2xl font-semibold">
                 {name}
               </h5>
             </header>
 
-            <p className="text-left font-light max-w-full my-10">
+            <p className="truncate-multiple-lines max-w-full font-light my-10">
               {description}
             </p>
 
             <Touchable
-              touchableHref={touchableHref}
-              touchableWrapperClassName="w-full"
+              touchableHref={actionLink}
+              touchableWrapperClassName="w-full mt-auto"
               touchableElementClassName="text-xs"
             >
               {buttonText}

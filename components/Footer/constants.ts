@@ -1,21 +1,21 @@
-import { SocialMedia } from "./types";
-
-const socialMedias: SocialMedia[] = [
+const socialMedias = [
   {
+    id: "1",
     href: "https://www.instagram.com/floripa.mais/",
     label: "Instagram",
   },
   {
+    id: "2",
     href: "https://www.linkedin.com/company/floripa-mais/",
     label: "Linkedin",
   },
 ];
 
-export const footerContent = {
+export const footerFixtures = {
   socialMediasTitle: "Conecte-se",
-  contactTitle: "Contato",
+  contactEmailTitle: "Contato",
   socialMedias,
-  email: "organizacaofloripamais@gmail.com",
+  contactEmail: "organizacaofloripamais@gmail.com",
 };
 
 export const footerId = "main-page-footer";

@@ -1,24 +1,3 @@
-import { SectionProps } from "components/Sections/Section/types";
+import { GetActionsSectionQuery } from "generated/graphql";
 
-export interface Action {
-  id: number;
-  name: string;
-  date: Date;
-  touchableHref: string;
-  description: string;
-}
-
-export interface ActionsSectionContentProps extends Partial<SectionProps> {
-  nextActions?: Action[];
-  previousActions?: Action[];
-  actionButtonText?: string;
-  noActionsFoundText?: string;
-  nextActionsSubtitle?: string;
-  previousActionsSubtitle?: string;
-}
-
-export interface ActionsSectionSliderContainerProps {
-  actions: Action[];
-  subtitle: string;
-  actionButtonText: ActionsSectionContentProps["actionButtonText"];
-}
+export type ActionsSectionProps = GetActionsSectionQuery["actionsSection"];

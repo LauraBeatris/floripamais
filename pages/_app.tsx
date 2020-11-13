@@ -7,7 +7,6 @@ import "styles/main.css";
 import ContextProviders from "contexts";
 import seoConfig from "config/seo";
 import Header from "components/Header";
-import Footer from "components/Footer";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
@@ -19,7 +18,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
     <ContextProviders>
       <Header />
       <Component {...pageProps} />
-      <Footer />
     </ContextProviders>
   </>
 );

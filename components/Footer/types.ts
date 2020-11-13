@@ -1,14 +1,6 @@
-export interface SocialMedia {
-  href: string;
-  label: string;
-}
+import { GetFooterQuery } from "generated/graphql";
 
-export interface FooterContentProps {
-  footerSocialMediasTitle?: string;
-  footerContactTitle?: string;
-  socialMedias?: SocialMedia[];
-  email?: string;
-}
+export type FooterProps = GetFooterQuery["footer"]
 
 export interface FooterContentItemProps {
   title: string;
