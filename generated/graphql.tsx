@@ -260,17 +260,17 @@ export type ActionsSection = {
   updated_at: Scalars['DateTime'];
   title: Scalars['String'];
   text: Scalars['String'];
-  action_button_text: Scalars['String'];
-  no_actions_found_text: Scalars['String'];
-  next_actions_subtitle: Maybe<Scalars['String']>;
-  previous_actions_subtitle: Maybe<Scalars['String']>;
+  actionButtonText: Scalars['String'];
+  noActionsFoundText: Scalars['String'];
+  nextActionsSubtitle: Maybe<Scalars['String']>;
+  previousActionsSubtitle: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
-  next_actions: Maybe<Array<Maybe<Actions>>>;
-  previous_actions: Maybe<Array<Maybe<Actions>>>;
+  nextActions: Maybe<Array<Maybe<Actions>>>;
+  previousActions: Maybe<Array<Maybe<Actions>>>;
 };
 
 
-export type ActionsSectionNext_ActionsArgs = {
+export type ActionsSectionNextActionsArgs = {
   sort: Maybe<Scalars['String']>;
   limit: Maybe<Scalars['Int']>;
   start: Maybe<Scalars['Int']>;
@@ -278,7 +278,7 @@ export type ActionsSectionNext_ActionsArgs = {
 };
 
 
-export type ActionsSectionPrevious_ActionsArgs = {
+export type ActionsSectionPreviousActionsArgs = {
   sort: Maybe<Scalars['String']>;
   limit: Maybe<Scalars['Int']>;
   start: Maybe<Scalars['Int']>;
@@ -288,12 +288,12 @@ export type ActionsSectionPrevious_ActionsArgs = {
 export type ActionsSectionInput = {
   title: Scalars['String'];
   text: Scalars['String'];
-  next_actions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  previous_actions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  action_button_text: Scalars['String'];
-  no_actions_found_text: Scalars['String'];
-  next_actions_subtitle: Maybe<Scalars['String']>;
-  previous_actions_subtitle: Maybe<Scalars['String']>;
+  nextActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  previousActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  actionButtonText: Scalars['String'];
+  noActionsFoundText: Scalars['String'];
+  nextActionsSubtitle: Maybe<Scalars['String']>;
+  previousActionsSubtitle: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -302,12 +302,12 @@ export type ActionsSectionInput = {
 export type EditActionsSectionInput = {
   title: Maybe<Scalars['String']>;
   text: Maybe<Scalars['String']>;
-  next_actions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  previous_actions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  action_button_text: Maybe<Scalars['String']>;
-  no_actions_found_text: Maybe<Scalars['String']>;
-  next_actions_subtitle: Maybe<Scalars['String']>;
-  previous_actions_subtitle: Maybe<Scalars['String']>;
+  nextActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  previousActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  actionButtonText: Maybe<Scalars['String']>;
+  noActionsFoundText: Maybe<Scalars['String']>;
+  nextActionsSubtitle: Maybe<Scalars['String']>;
+  previousActionsSubtitle: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -334,7 +334,7 @@ export type Actions = {
   updated_at: Scalars['DateTime'];
   name: Scalars['String'];
   date: Scalars['DateTime'];
-  action_link: Scalars['String'];
+  actionLink: Scalars['String'];
   description: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
 };
@@ -359,7 +359,7 @@ export type ActionsGroupBy = {
   updated_at: Maybe<Array<Maybe<ActionsConnectionUpdated_At>>>;
   name: Maybe<Array<Maybe<ActionsConnectionName>>>;
   date: Maybe<Array<Maybe<ActionsConnectionDate>>>;
-  action_link: Maybe<Array<Maybe<ActionsConnectionAction_Link>>>;
+  actionLink: Maybe<Array<Maybe<ActionsConnectionActionLink>>>;
   description: Maybe<Array<Maybe<ActionsConnectionDescription>>>;
   published_at: Maybe<Array<Maybe<ActionsConnectionPublished_At>>>;
 };
@@ -394,8 +394,8 @@ export type ActionsConnectionDate = {
   connection: Maybe<ActionsConnection>;
 };
 
-export type ActionsConnectionAction_Link = {
-  __typename?: 'ActionsConnectionAction_link';
+export type ActionsConnectionActionLink = {
+  __typename?: 'ActionsConnectionActionLink';
   key: Maybe<Scalars['String']>;
   connection: Maybe<ActionsConnection>;
 };
@@ -415,7 +415,7 @@ export type ActionsConnectionPublished_At = {
 export type ActionInput = {
   name: Scalars['String'];
   date: Scalars['DateTime'];
-  action_link: Scalars['String'];
+  actionLink: Scalars['String'];
   description: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
@@ -425,7 +425,7 @@ export type ActionInput = {
 export type EditActionInput = {
   name: Maybe<Scalars['String']>;
   date: Maybe<Scalars['DateTime']>;
-  action_link: Maybe<Scalars['String']>;
+  actionLink: Maybe<Scalars['String']>;
   description: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
@@ -466,19 +466,19 @@ export type DonationsSection = {
   created_at: Scalars['DateTime'];
   updated_at: Scalars['DateTime'];
   title: Scalars['String'];
-  button_text: Scalars['String'];
+  buttonText: Scalars['String'];
   text: Scalars['String'];
-  sheet_link: Scalars['String'];
-  emoji_symbol: Scalars['String'];
+  sheetLink: Scalars['String'];
+  emojiSymbol: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
 };
 
 export type DonationsSectionInput = {
   title: Scalars['String'];
-  button_text: Scalars['String'];
+  buttonText: Scalars['String'];
   text: Scalars['String'];
-  sheet_link: Scalars['String'];
-  emoji_symbol: Scalars['String'];
+  sheetLink: Scalars['String'];
+  emojiSymbol: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -486,10 +486,10 @@ export type DonationsSectionInput = {
 
 export type EditDonationsSectionInput = {
   title: Maybe<Scalars['String']>;
-  button_text: Maybe<Scalars['String']>;
+  buttonText: Maybe<Scalars['String']>;
   text: Maybe<Scalars['String']>;
-  sheet_link: Maybe<Scalars['String']>;
-  emoji_symbol: Maybe<Scalars['String']>;
+  sheetLink: Maybe<Scalars['String']>;
+  emojiSymbol: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -509,21 +509,75 @@ export type DeleteDonationsSectionPayload = {
   donationsSection: Maybe<DonationsSection>;
 };
 
+export type Footer = {
+  __typename?: 'Footer';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  socialMediasTitle: Scalars['String'];
+  contactEmailTitle: Scalars['String'];
+  contactEmail: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+  socialMedias: Maybe<Array<Maybe<SocialMedias>>>;
+};
+
+
+export type FooterSocialMediasArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+};
+
+export type FooterInput = {
+  socialMediasTitle: Scalars['String'];
+  contactEmailTitle: Scalars['String'];
+  contactEmail: Scalars['String'];
+  socialMedias: Maybe<Array<Maybe<Scalars['ID']>>>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type EditFooterInput = {
+  socialMediasTitle: Maybe<Scalars['String']>;
+  contactEmailTitle: Maybe<Scalars['String']>;
+  contactEmail: Maybe<Scalars['String']>;
+  socialMedias: Maybe<Array<Maybe<Scalars['ID']>>>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type UpdateFooterInput = {
+  data: Maybe<EditFooterInput>;
+};
+
+export type UpdateFooterPayload = {
+  __typename?: 'updateFooterPayload';
+  footer: Maybe<Footer>;
+};
+
+export type DeleteFooterPayload = {
+  __typename?: 'deleteFooterPayload';
+  footer: Maybe<Footer>;
+};
+
 export type IntroductionSection = {
   __typename?: 'IntroductionSection';
   id: Scalars['ID'];
   created_at: Scalars['DateTime'];
   updated_at: Scalars['DateTime'];
   title: Scalars['String'];
-  button_text: Scalars['String'];
-  background_image_link: Scalars['String'];
+  buttonText: Scalars['String'];
+  backgroundImageLink: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
 };
 
 export type IntroductionSectionInput = {
   title: Scalars['String'];
-  button_text: Scalars['String'];
-  background_image_link: Scalars['String'];
+  buttonText: Scalars['String'];
+  backgroundImageLink: Scalars['String'];
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -531,8 +585,8 @@ export type IntroductionSectionInput = {
 
 export type EditIntroductionSectionInput = {
   title: Maybe<Scalars['String']>;
-  button_text: Maybe<Scalars['String']>;
-  background_image_link: Maybe<Scalars['String']>;
+  buttonText: Maybe<Scalars['String']>;
+  backgroundImageLink: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
   created_by: Maybe<Scalars['ID']>;
   updated_by: Maybe<Scalars['ID']>;
@@ -550,6 +604,406 @@ export type UpdateIntroductionSectionPayload = {
 export type DeleteIntroductionSectionPayload = {
   __typename?: 'deleteIntroductionSectionPayload';
   introductionSection: Maybe<IntroductionSection>;
+};
+
+export type OrgInfo = {
+  __typename?: 'OrgInfo';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  title: Scalars['String'];
+  text: Scalars['String'];
+  emojiSymbol: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+};
+
+export type OrgInfoConnection = {
+  __typename?: 'OrgInfoConnection';
+  values: Maybe<Array<Maybe<OrgInfo>>>;
+  groupBy: Maybe<OrgInfoGroupBy>;
+  aggregate: Maybe<OrgInfoAggregator>;
+};
+
+export type OrgInfoAggregator = {
+  __typename?: 'OrgInfoAggregator';
+  count: Maybe<Scalars['Int']>;
+  totalCount: Maybe<Scalars['Int']>;
+};
+
+export type OrgInfoGroupBy = {
+  __typename?: 'OrgInfoGroupBy';
+  id: Maybe<Array<Maybe<OrgInfoConnectionId>>>;
+  created_at: Maybe<Array<Maybe<OrgInfoConnectionCreated_At>>>;
+  updated_at: Maybe<Array<Maybe<OrgInfoConnectionUpdated_At>>>;
+  title: Maybe<Array<Maybe<OrgInfoConnectionTitle>>>;
+  text: Maybe<Array<Maybe<OrgInfoConnectionText>>>;
+  emojiSymbol: Maybe<Array<Maybe<OrgInfoConnectionEmojiSymbol>>>;
+  published_at: Maybe<Array<Maybe<OrgInfoConnectionPublished_At>>>;
+};
+
+export type OrgInfoConnectionId = {
+  __typename?: 'OrgInfoConnectionId';
+  key: Maybe<Scalars['ID']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionCreated_At = {
+  __typename?: 'OrgInfoConnectionCreated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionUpdated_At = {
+  __typename?: 'OrgInfoConnectionUpdated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionTitle = {
+  __typename?: 'OrgInfoConnectionTitle';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionText = {
+  __typename?: 'OrgInfoConnectionText';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionEmojiSymbol = {
+  __typename?: 'OrgInfoConnectionEmojiSymbol';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoConnectionPublished_At = {
+  __typename?: 'OrgInfoConnectionPublished_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<OrgInfoConnection>;
+};
+
+export type OrgInfoInput = {
+  title: Scalars['String'];
+  text: Scalars['String'];
+  emojiSymbol: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type EditOrgInfoInput = {
+  title: Maybe<Scalars['String']>;
+  text: Maybe<Scalars['String']>;
+  emojiSymbol: Maybe<Scalars['String']>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type CreateOrgInfoInput = {
+  data: Maybe<OrgInfoInput>;
+};
+
+export type CreateOrgInfoPayload = {
+  __typename?: 'createOrgInfoPayload';
+  orgInfo: Maybe<OrgInfo>;
+};
+
+export type UpdateOrgInfoInput = {
+  where: Maybe<InputId>;
+  data: Maybe<EditOrgInfoInput>;
+};
+
+export type UpdateOrgInfoPayload = {
+  __typename?: 'updateOrgInfoPayload';
+  orgInfo: Maybe<OrgInfo>;
+};
+
+export type DeleteOrgInfoInput = {
+  where: Maybe<InputId>;
+};
+
+export type DeleteOrgInfoPayload = {
+  __typename?: 'deleteOrgInfoPayload';
+  orgInfo: Maybe<OrgInfo>;
+};
+
+export type SocialMedias = {
+  __typename?: 'SocialMedias';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  href: Scalars['String'];
+  label: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+};
+
+export type SocialMediasConnection = {
+  __typename?: 'SocialMediasConnection';
+  values: Maybe<Array<Maybe<SocialMedias>>>;
+  groupBy: Maybe<SocialMediasGroupBy>;
+  aggregate: Maybe<SocialMediasAggregator>;
+};
+
+export type SocialMediasAggregator = {
+  __typename?: 'SocialMediasAggregator';
+  count: Maybe<Scalars['Int']>;
+  totalCount: Maybe<Scalars['Int']>;
+};
+
+export type SocialMediasGroupBy = {
+  __typename?: 'SocialMediasGroupBy';
+  id: Maybe<Array<Maybe<SocialMediasConnectionId>>>;
+  created_at: Maybe<Array<Maybe<SocialMediasConnectionCreated_At>>>;
+  updated_at: Maybe<Array<Maybe<SocialMediasConnectionUpdated_At>>>;
+  href: Maybe<Array<Maybe<SocialMediasConnectionHref>>>;
+  label: Maybe<Array<Maybe<SocialMediasConnectionLabel>>>;
+  published_at: Maybe<Array<Maybe<SocialMediasConnectionPublished_At>>>;
+};
+
+export type SocialMediasConnectionId = {
+  __typename?: 'SocialMediasConnectionId';
+  key: Maybe<Scalars['ID']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediasConnectionCreated_At = {
+  __typename?: 'SocialMediasConnectionCreated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediasConnectionUpdated_At = {
+  __typename?: 'SocialMediasConnectionUpdated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediasConnectionHref = {
+  __typename?: 'SocialMediasConnectionHref';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediasConnectionLabel = {
+  __typename?: 'SocialMediasConnectionLabel';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediasConnectionPublished_At = {
+  __typename?: 'SocialMediasConnectionPublished_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<SocialMediasConnection>;
+};
+
+export type SocialMediaInput = {
+  href: Scalars['String'];
+  label: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type EditSocialMediaInput = {
+  href: Maybe<Scalars['String']>;
+  label: Maybe<Scalars['String']>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type CreateSocialMediaInput = {
+  data: Maybe<SocialMediaInput>;
+};
+
+export type CreateSocialMediaPayload = {
+  __typename?: 'createSocialMediaPayload';
+  socialMedia: Maybe<SocialMedias>;
+};
+
+export type UpdateSocialMediaInput = {
+  where: Maybe<InputId>;
+  data: Maybe<EditSocialMediaInput>;
+};
+
+export type UpdateSocialMediaPayload = {
+  __typename?: 'updateSocialMediaPayload';
+  socialMedia: Maybe<SocialMedias>;
+};
+
+export type DeleteSocialMediaInput = {
+  where: Maybe<InputId>;
+};
+
+export type DeleteSocialMediaPayload = {
+  __typename?: 'deleteSocialMediaPayload';
+  socialMedia: Maybe<SocialMedias>;
+};
+
+export type TeamMember = {
+  __typename?: 'TeamMember';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  name: Scalars['String'];
+  photoUrl: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+};
+
+export type TeamMemberConnection = {
+  __typename?: 'TeamMemberConnection';
+  values: Maybe<Array<Maybe<TeamMember>>>;
+  groupBy: Maybe<TeamMemberGroupBy>;
+  aggregate: Maybe<TeamMemberAggregator>;
+};
+
+export type TeamMemberAggregator = {
+  __typename?: 'TeamMemberAggregator';
+  count: Maybe<Scalars['Int']>;
+  totalCount: Maybe<Scalars['Int']>;
+};
+
+export type TeamMemberGroupBy = {
+  __typename?: 'TeamMemberGroupBy';
+  id: Maybe<Array<Maybe<TeamMemberConnectionId>>>;
+  created_at: Maybe<Array<Maybe<TeamMemberConnectionCreated_At>>>;
+  updated_at: Maybe<Array<Maybe<TeamMemberConnectionUpdated_At>>>;
+  name: Maybe<Array<Maybe<TeamMemberConnectionName>>>;
+  photoUrl: Maybe<Array<Maybe<TeamMemberConnectionPhotoUrl>>>;
+  published_at: Maybe<Array<Maybe<TeamMemberConnectionPublished_At>>>;
+};
+
+export type TeamMemberConnectionId = {
+  __typename?: 'TeamMemberConnectionId';
+  key: Maybe<Scalars['ID']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberConnectionCreated_At = {
+  __typename?: 'TeamMemberConnectionCreated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberConnectionUpdated_At = {
+  __typename?: 'TeamMemberConnectionUpdated_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberConnectionName = {
+  __typename?: 'TeamMemberConnectionName';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberConnectionPhotoUrl = {
+  __typename?: 'TeamMemberConnectionPhotoUrl';
+  key: Maybe<Scalars['String']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberConnectionPublished_At = {
+  __typename?: 'TeamMemberConnectionPublished_at';
+  key: Maybe<Scalars['DateTime']>;
+  connection: Maybe<TeamMemberConnection>;
+};
+
+export type TeamMemberInput = {
+  name: Scalars['String'];
+  photoUrl: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type EditTeamMemberInput = {
+  name: Maybe<Scalars['String']>;
+  photoUrl: Maybe<Scalars['String']>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type CreateTeamMemberInput = {
+  data: Maybe<TeamMemberInput>;
+};
+
+export type CreateTeamMemberPayload = {
+  __typename?: 'createTeamMemberPayload';
+  teamMember: Maybe<TeamMember>;
+};
+
+export type UpdateTeamMemberInput = {
+  where: Maybe<InputId>;
+  data: Maybe<EditTeamMemberInput>;
+};
+
+export type UpdateTeamMemberPayload = {
+  __typename?: 'updateTeamMemberPayload';
+  teamMember: Maybe<TeamMember>;
+};
+
+export type DeleteTeamMemberInput = {
+  where: Maybe<InputId>;
+};
+
+export type DeleteTeamMemberPayload = {
+  __typename?: 'deleteTeamMemberPayload';
+  teamMember: Maybe<TeamMember>;
+};
+
+export type TeamMembersSection = {
+  __typename?: 'TeamMembersSection';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  title: Scalars['String'];
+  text: Scalars['String'];
+  published_at: Maybe<Scalars['DateTime']>;
+  teamMembers: Maybe<Array<Maybe<TeamMember>>>;
+};
+
+
+export type TeamMembersSectionTeamMembersArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+};
+
+export type TeamMembersSectionInput = {
+  title: Scalars['String'];
+  text: Scalars['String'];
+  teamMembers: Maybe<Array<Maybe<Scalars['ID']>>>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type EditTeamMembersSectionInput = {
+  title: Maybe<Scalars['String']>;
+  text: Maybe<Scalars['String']>;
+  teamMembers: Maybe<Array<Maybe<Scalars['ID']>>>;
+  published_at: Maybe<Scalars['DateTime']>;
+  created_by: Maybe<Scalars['ID']>;
+  updated_by: Maybe<Scalars['ID']>;
+};
+
+export type UpdateTeamMembersSectionInput = {
+  data: Maybe<EditTeamMembersSectionInput>;
+};
+
+export type UpdateTeamMembersSectionPayload = {
+  __typename?: 'updateTeamMembersSectionPayload';
+  teamMembersSection: Maybe<TeamMembersSection>;
+};
+
+export type DeleteTeamMembersSectionPayload = {
+  __typename?: 'deleteTeamMembersSectionPayload';
+  teamMembersSection: Maybe<TeamMembersSection>;
 };
 
 export type UploadFile = {
@@ -1078,7 +1532,7 @@ export type DeleteUserPayload = {
   user: Maybe<UsersPermissionsUser>;
 };
 
-export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | AchievementsSection | UpdateAchievementsSectionPayload | DeleteAchievementsSectionPayload | Achievements | AchievementsConnection | AchievementsAggregator | AchievementsAggregatorSum | AchievementsAggregatorAvg | AchievementsAggregatorMin | AchievementsAggregatorMax | AchievementsGroupBy | AchievementsConnectionId | AchievementsConnectionCreated_At | AchievementsConnectionUpdated_At | AchievementsConnectionLabel | AchievementsConnectionValue | AchievementsConnectionPublished_At | CreateAchievementPayload | UpdateAchievementPayload | DeleteAchievementPayload | ActionsSection | UpdateActionsSectionPayload | DeleteActionsSectionPayload | Actions | ActionsConnection | ActionsAggregator | ActionsGroupBy | ActionsConnectionId | ActionsConnectionCreated_At | ActionsConnectionUpdated_At | ActionsConnectionName | ActionsConnectionDate | ActionsConnectionAction_Link | ActionsConnectionDescription | ActionsConnectionPublished_At | CreateActionPayload | UpdateActionPayload | DeleteActionPayload | DonationsSection | UpdateDonationsSectionPayload | DeleteDonationsSectionPayload | IntroductionSection | UpdateIntroductionSectionPayload | DeleteIntroductionSectionPayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
+export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | AchievementsSection | UpdateAchievementsSectionPayload | DeleteAchievementsSectionPayload | Achievements | AchievementsConnection | AchievementsAggregator | AchievementsAggregatorSum | AchievementsAggregatorAvg | AchievementsAggregatorMin | AchievementsAggregatorMax | AchievementsGroupBy | AchievementsConnectionId | AchievementsConnectionCreated_At | AchievementsConnectionUpdated_At | AchievementsConnectionLabel | AchievementsConnectionValue | AchievementsConnectionPublished_At | CreateAchievementPayload | UpdateAchievementPayload | DeleteAchievementPayload | ActionsSection | UpdateActionsSectionPayload | DeleteActionsSectionPayload | Actions | ActionsConnection | ActionsAggregator | ActionsGroupBy | ActionsConnectionId | ActionsConnectionCreated_At | ActionsConnectionUpdated_At | ActionsConnectionName | ActionsConnectionDate | ActionsConnectionActionLink | ActionsConnectionDescription | ActionsConnectionPublished_At | CreateActionPayload | UpdateActionPayload | DeleteActionPayload | DonationsSection | UpdateDonationsSectionPayload | DeleteDonationsSectionPayload | Footer | UpdateFooterPayload | DeleteFooterPayload | IntroductionSection | UpdateIntroductionSectionPayload | DeleteIntroductionSectionPayload | OrgInfo | OrgInfoConnection | OrgInfoAggregator | OrgInfoGroupBy | OrgInfoConnectionId | OrgInfoConnectionCreated_At | OrgInfoConnectionUpdated_At | OrgInfoConnectionTitle | OrgInfoConnectionText | OrgInfoConnectionEmojiSymbol | OrgInfoConnectionPublished_At | CreateOrgInfoPayload | UpdateOrgInfoPayload | DeleteOrgInfoPayload | SocialMedias | SocialMediasConnection | SocialMediasAggregator | SocialMediasGroupBy | SocialMediasConnectionId | SocialMediasConnectionCreated_At | SocialMediasConnectionUpdated_At | SocialMediasConnectionHref | SocialMediasConnectionLabel | SocialMediasConnectionPublished_At | CreateSocialMediaPayload | UpdateSocialMediaPayload | DeleteSocialMediaPayload | TeamMember | TeamMemberConnection | TeamMemberAggregator | TeamMemberGroupBy | TeamMemberConnectionId | TeamMemberConnectionCreated_At | TeamMemberConnectionUpdated_At | TeamMemberConnectionName | TeamMemberConnectionPhotoUrl | TeamMemberConnectionPublished_At | CreateTeamMemberPayload | UpdateTeamMemberPayload | DeleteTeamMemberPayload | TeamMembersSection | UpdateTeamMembersSectionPayload | DeleteTeamMembersSectionPayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
 
 export type InputId = {
   id: Scalars['ID'];
@@ -1108,7 +1562,18 @@ export type Query = {
   actions: Maybe<Array<Maybe<Actions>>>;
   actionsConnection: Maybe<ActionsConnection>;
   donationsSection: Maybe<DonationsSection>;
+  footer: Maybe<Footer>;
   introductionSection: Maybe<IntroductionSection>;
+  orgInfo: Maybe<OrgInfo>;
+  orgInfos: Maybe<Array<Maybe<OrgInfo>>>;
+  orgInfosConnection: Maybe<OrgInfoConnection>;
+  socialMedia: Maybe<SocialMedias>;
+  socialMedias: Maybe<Array<Maybe<SocialMedias>>>;
+  socialMediasConnection: Maybe<SocialMediasConnection>;
+  teamMember: Maybe<TeamMember>;
+  teamMembers: Maybe<Array<Maybe<TeamMember>>>;
+  teamMembersConnection: Maybe<TeamMemberConnection>;
+  teamMembersSection: Maybe<TeamMembersSection>;
   files: Maybe<Array<Maybe<UploadFile>>>;
   filesConnection: Maybe<UploadFileConnection>;
   role: Maybe<UsersPermissionsRole>;
@@ -1183,7 +1648,86 @@ export type QueryDonationsSectionArgs = {
 };
 
 
+export type QueryFooterArgs = {
+  publicationState: Maybe<PublicationState>;
+};
+
+
 export type QueryIntroductionSectionArgs = {
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QueryOrgInfoArgs = {
+  id: Scalars['ID'];
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QueryOrgInfosArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QueryOrgInfosConnectionArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+};
+
+
+export type QuerySocialMediaArgs = {
+  id: Scalars['ID'];
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QuerySocialMediasArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QuerySocialMediasConnectionArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+};
+
+
+export type QueryTeamMemberArgs = {
+  id: Scalars['ID'];
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QueryTeamMembersArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+  publicationState: Maybe<PublicationState>;
+};
+
+
+export type QueryTeamMembersConnectionArgs = {
+  sort: Maybe<Scalars['String']>;
+  limit: Maybe<Scalars['Int']>;
+  start: Maybe<Scalars['Int']>;
+  where: Maybe<Scalars['JSON']>;
+};
+
+
+export type QueryTeamMembersSectionArgs = {
   publicationState: Maybe<PublicationState>;
 };
 
@@ -1264,8 +1808,21 @@ export type Mutation = {
   deleteAction: Maybe<DeleteActionPayload>;
   updateDonationsSection: Maybe<UpdateDonationsSectionPayload>;
   deleteDonationsSection: Maybe<DeleteDonationsSectionPayload>;
+  updateFooter: Maybe<UpdateFooterPayload>;
+  deleteFooter: Maybe<DeleteFooterPayload>;
   updateIntroductionSection: Maybe<UpdateIntroductionSectionPayload>;
   deleteIntroductionSection: Maybe<DeleteIntroductionSectionPayload>;
+  createOrgInfo: Maybe<CreateOrgInfoPayload>;
+  updateOrgInfo: Maybe<UpdateOrgInfoPayload>;
+  deleteOrgInfo: Maybe<DeleteOrgInfoPayload>;
+  createSocialMedia: Maybe<CreateSocialMediaPayload>;
+  updateSocialMedia: Maybe<UpdateSocialMediaPayload>;
+  deleteSocialMedia: Maybe<DeleteSocialMediaPayload>;
+  createTeamMember: Maybe<CreateTeamMemberPayload>;
+  updateTeamMember: Maybe<UpdateTeamMemberPayload>;
+  deleteTeamMember: Maybe<DeleteTeamMemberPayload>;
+  updateTeamMembersSection: Maybe<UpdateTeamMembersSectionPayload>;
+  deleteTeamMembersSection: Maybe<DeleteTeamMembersSectionPayload>;
   /** Delete one file */
   deleteFile: Maybe<DeleteFilePayload>;
   /** Create a new role */
@@ -1336,8 +1893,63 @@ export type MutationUpdateDonationsSectionArgs = {
 };
 
 
+export type MutationUpdateFooterArgs = {
+  input: Maybe<UpdateFooterInput>;
+};
+
+
 export type MutationUpdateIntroductionSectionArgs = {
   input: Maybe<UpdateIntroductionSectionInput>;
+};
+
+
+export type MutationCreateOrgInfoArgs = {
+  input: Maybe<CreateOrgInfoInput>;
+};
+
+
+export type MutationUpdateOrgInfoArgs = {
+  input: Maybe<UpdateOrgInfoInput>;
+};
+
+
+export type MutationDeleteOrgInfoArgs = {
+  input: Maybe<DeleteOrgInfoInput>;
+};
+
+
+export type MutationCreateSocialMediaArgs = {
+  input: Maybe<CreateSocialMediaInput>;
+};
+
+
+export type MutationUpdateSocialMediaArgs = {
+  input: Maybe<UpdateSocialMediaInput>;
+};
+
+
+export type MutationDeleteSocialMediaArgs = {
+  input: Maybe<DeleteSocialMediaInput>;
+};
+
+
+export type MutationCreateTeamMemberArgs = {
+  input: Maybe<CreateTeamMemberInput>;
+};
+
+
+export type MutationUpdateTeamMemberArgs = {
+  input: Maybe<UpdateTeamMemberInput>;
+};
+
+
+export type MutationDeleteTeamMemberArgs = {
+  input: Maybe<DeleteTeamMemberInput>;
+};
+
+
+export type MutationUpdateTeamMembersSectionArgs = {
+  input: Maybe<UpdateTeamMembersSectionInput>;
 };
 
 
@@ -1437,10 +2049,10 @@ export enum CacheControlScope {
   Private = 'PRIVATE'
 }
 
-export type GetAchievementsSectionContentQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetAchievementsSectionQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetAchievementsSectionContentQuery = (
+export type GetAchievementsSectionQuery = (
   { __typename?: 'Query' }
   & { achievementsSection: Maybe<(
     { __typename?: 'AchievementsSection' }
@@ -1454,19 +2066,17 @@ export type GetAchievementsSectionContentQuery = (
 
 export type ActionFieldsFragment = (
   { __typename?: 'Actions' }
-  & Pick<Actions, 'id' | 'name' | 'date' | 'description'>
-  & { actionLink: Actions['action_link'] }
+  & Pick<Actions, 'id' | 'name' | 'date' | 'description' | 'actionLink'>
 );
 
-export type GetActionsSectionContentQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetActionsSectionQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetActionsSectionContentQuery = (
+export type GetActionsSectionQuery = (
   { __typename?: 'Query' }
   & { actionsSection: Maybe<(
     { __typename?: 'ActionsSection' }
-    & Pick<ActionsSection, 'id' | 'text' | 'title'>
-    & { actionButtonText: ActionsSection['action_button_text'], noActionsFoundText: ActionsSection['no_actions_found_text'], nextActionsSubtitle: ActionsSection['next_actions_subtitle'], previousActionsSubtitle: ActionsSection['previous_actions_subtitle'] }
+    & Pick<ActionsSection, 'id' | 'text' | 'title' | 'actionButtonText' | 'nextActionsSubtitle' | 'noActionsFoundText' | 'previousActionsSubtitle'>
     & { nextActions: Maybe<Array<Maybe<(
       { __typename?: 'Actions' }
       & ActionFieldsFragment
@@ -1477,24 +2087,65 @@ export type GetActionsSectionContentQuery = (
   )> }
 );
 
-export type GetDonationsSectionContentQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetDonationsSectionQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetDonationsSectionContentQuery = (
+export type GetDonationsSectionQuery = (
   { __typename?: 'Query' }
   & { donationsSection: Maybe<(
     { __typename?: 'DonationsSection' }
-    & Pick<DonationsSection, 'id' | 'text' | 'title' | 'sheet_link' | 'button_text' | 'emoji_symbol'>
+    & Pick<DonationsSection, 'id' | 'text' | 'title' | 'sheetLink' | 'buttonText' | 'emojiSymbol'>
   )> }
 );
 
-export type GetIntroductionSectionContentQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetFooterQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetIntroductionSectionContentQuery = (
+export type GetFooterQuery = (
+  { __typename?: 'Query' }
+  & { footer: Maybe<(
+    { __typename?: 'Footer' }
+    & Pick<Footer, 'id' | 'contactEmail' | 'socialMediasTitle' | 'contactEmailTitle'>
+    & { socialMedias: Maybe<Array<Maybe<(
+      { __typename?: 'SocialMedias' }
+      & Pick<SocialMedias, 'id' | 'label' | 'href'>
+    )>>> }
+  )> }
+);
+
+export type GetIntroductionSectionQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetIntroductionSectionQuery = (
   { __typename?: 'Query' }
   & { introductionSection: Maybe<(
     { __typename?: 'IntroductionSection' }
-    & Pick<IntroductionSection, 'id' | 'title' | 'button_text' | 'background_image_link'>
+    & Pick<IntroductionSection, 'id' | 'title' | 'buttonText' | 'backgroundImageLink'>
+  )> }
+);
+
+export type GetOrgInfosQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetOrgInfosQuery = (
+  { __typename?: 'Query' }
+  & { orgInfos: Maybe<Array<Maybe<(
+    { __typename?: 'OrgInfo' }
+    & Pick<OrgInfo, 'id' | 'text' | 'title' | 'emojiSymbol'>
+  )>>> }
+);
+
+export type GetTeamMembersSectionQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetTeamMembersSectionQuery = (
+  { __typename?: 'Query' }
+  & { teamMembersSection: Maybe<(
+    { __typename?: 'TeamMembersSection' }
+    & Pick<TeamMembersSection, 'id' | 'text' | 'title'>
+    & { teamMembers: Maybe<Array<Maybe<(
+      { __typename?: 'TeamMember' }
+      & Pick<TeamMember, 'id' | 'name' | 'photoUrl'>
+    )>>> }
   )> }
 );
