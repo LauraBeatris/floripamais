@@ -26,6 +26,35 @@
   background: rgba(0, 0, 0, .5);
 }
 
+.truncate-multiple-lines {
+  --line-height: 1.2em;
+                             overflow: hidden;
+  position: relative;
+  line-height: var(--line-height);
+  max-height: calc(var(--line-height) * 6);
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.truncate-multiple-lines::before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.truncate-multiple-lines::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+
+  @apply bg-white-light;
+}
+
 /** Libraries Overrides **/
 .slick-track {
   margin-left: inset !important;
