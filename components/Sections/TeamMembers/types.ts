@@ -1,11 +1,3 @@
-import { SectionProps } from "components/Sections/Section/types";
+import { GetTeamMembersSectionQuery } from "generated/graphql";
 
-export interface TeamMember {
-  id: number;
-  name: string;
-  photoUrl: string;
-}
-
-export interface TeamMembersSectionContentProps extends Partial<SectionProps> {
-  members?: TeamMember[];
-}
+export type TeamMembersSectionProps = GetTeamMembersSectionQuery["teamMembersSection"];

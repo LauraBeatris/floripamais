@@ -6,7 +6,7 @@ import Slider from "components/Slider";
 import { TeamMembersSliderProps } from "./types";
 
 const TeamMembersSlider: React.FC<TeamMembersSliderProps> = ({
-  members,
+  teamMembers,
 }) => (
   <Slider
     pauseOnHover={false}
@@ -16,7 +16,7 @@ const TeamMembersSlider: React.FC<TeamMembersSliderProps> = ({
     speed={5000}
     dots={false}
   >
-    {members.map(({
+    {teamMembers.map(({
       id,
       name,
       photoUrl,

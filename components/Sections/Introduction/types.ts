@@ -1,5 +1,3 @@
-export interface IntroductionSectionContentProps {
-  backgroundImageLink?: string;
-  buttonText?: string;
-  title?: string;
-}
+import { GetIntroductionSectionQuery } from "generated/graphql";
+
+export type IntroductionSectionProps = GetIntroductionSectionQuery["introductionSection"];

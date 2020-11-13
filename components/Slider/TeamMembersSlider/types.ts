@@ -1,5 +1,5 @@
-import { TeamMember } from "components/Sections/TeamMembers/types";
+import { TeamMember } from "generated/graphql";
 
 export interface TeamMembersSliderProps {
-  members: TeamMember[];
+  teamMembers: Partial<TeamMember>[];
 }

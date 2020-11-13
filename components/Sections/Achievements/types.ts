@@ -1,12 +1,5 @@
-export interface AchievementsSectionContentProps {
-  title?: string;
-  freeEventsLabel?: string;
-  freeEventsNumber?: number;
-  organizationsHelpedLabel?: string;
-  organizationsHelpedNumber?: number;
-}
+import { Achievements, GetAchievementsSectionQuery } from "generated/graphql";
 
-export interface AchievementItemProps {
-  achievedNumber: number;
-  label: string;
-}
+export type AchievementItemProps = Pick<Achievements, "value" | "label">;
+
+export type AchievementsSectionProps = GetAchievementsSectionQuery["achievementsSection"]

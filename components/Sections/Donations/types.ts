@@ -1,3 +1,4 @@
-import { SectionProps } from "components/Sections/Section/types";
+import { GetDonationsSectionQuery } from "generated/graphql";
 
-export type DonationsSectionContentProps = Partial<SectionProps>
+export type DonationsSectionProps = GetDonationsSectionQuery["donationsSection"];
+
