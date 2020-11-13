@@ -4,7 +4,7 @@ export const orgInfoSectionFixtures = [
   {
     id: "1",
     title: "Missão",
-    text: "Queremos tornar a ilha um lugar melhor, ajudando a construir, através de ações solidárias, um futuro no qual sonhamos viver, com uma sociedade mais igualitária e justa. ",
+    text: "Queremos tornar a ilha um lugar melhor, ajudando a construir, através de ações solidárias, um futuro no qual sonhamos viver, com uma sociedade mais igualitária e justa.",
     emojiSymbol: "🎯",
   },
   {

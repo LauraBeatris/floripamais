@@ -25,12 +25,8 @@ const actionsSectionQuery = gql`
       nextActions {
         ...ActionFields
       }
-      previousActions {
-        ...ActionFields
-      }
       actionButtonText
       nextActionsSubtitle
-      noActionsFoundText
       previousActionsSubtitle
     }
   }
