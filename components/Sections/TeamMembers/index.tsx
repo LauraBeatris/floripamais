@@ -5,6 +5,7 @@ import Section from "components/Sections/Section";
 
 import { TeamMembersSectionProps } from "./types";
 import { teamMembersSectionFixtures, teamMembersSectionId } from "./constants";
+import { SectionVariant } from "../Section/types";
 
 const TeamMembersSection: React.FC<TeamMembersSectionProps> = ({
   text = teamMembersSectionFixtures.text,
@@ -13,8 +14,9 @@ const TeamMembersSection: React.FC<TeamMembersSectionProps> = ({
 }) => (
   <Section
     id={teamMembersSectionId}
-    title={title}
     text={text}
+    title={title}
+    variant={SectionVariant.Primary}
   >
     <div className="w-full mt-12">
       <TeamMembersSlider teamMembers={teamMembers} />

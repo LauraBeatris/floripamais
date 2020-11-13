@@ -19,9 +19,9 @@ const FooterContentItem: React.FC<FooterContentItemProps> = ({
   </div>
 );
 
-const subtitleClassName = "break-words text-black max-w-full";
+const subtitleClassName = "break-words text-white max-w-full";
 
-const borderSubtitleClassName = "hover:border-b-2 border-black";
+const borderSubtitleClassName = "hover:border-b-2 border-white";
 
 const Footer: React.FC<FooterProps> = ({
   socialMediasTitle = footerFixtures.socialMediasTitle,
@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <footer
       id={footerId}
-      className="mt-auto w-screen bg-white-light py-10 px-5 md:py-16 md:px-32"
+      className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32"
     >
       <MaxWidthContainer className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <FooterContentItem title={socialMediasTitle}>
