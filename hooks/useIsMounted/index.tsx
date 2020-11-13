@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
  * Useful for cases where a content should only be rendered on the browser
  * and the DOM should stay the same on the server and on the re-hydration process.
  */
-const useHasMounted = (): boolean => {
+const useHasMounted = () => {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
