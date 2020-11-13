@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "introduction_section",
+  "kind": "collectionType",
+  "collectionName": "team-member",
   "info": {
-    "name": "Sessäo Introdutória",
+    "name": "Membro",
     "description": ""
   },
   "options": {
@@ -11,15 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "buttonText": {
-      "type": "string",
-      "required": true
-    },
-    "backgroundImageLink": {
+    "photoUrl": {
       "type": "string",
       "required": true
     }

@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "button_text": {
+    "buttonText": {
       "type": "string",
       "required": true
     },
@@ -23,11 +23,11 @@
       "type": "text",
       "required": true
     },
-    "sheet_link": {
+    "sheetLink": {
       "type": "string",
       "required": true
     },
-    "emoji_symbol": {
+    "emojiSymbol": {
       "type": "string",
       "required": true
     }

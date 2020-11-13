@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "introduction_section",
+  "collectionName": "footer",
   "info": {
-    "name": "Sessäo Introdutória",
+    "name": "Footer",
     "description": ""
   },
   "options": {
@@ -11,17 +11,20 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "socialMediasTitle": {
       "type": "string",
       "required": true
     },
-    "buttonText": {
+    "contactEmailTitle": {
       "type": "string",
       "required": true
     },
-    "backgroundImageLink": {
-      "type": "string",
+    "contactEmail": {
+      "type": "email",
       "required": true
+    },
+    "socialMedias": {
+      "collection": "social-medias"
     }
   }
 }

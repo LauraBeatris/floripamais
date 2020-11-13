@@ -19,7 +19,7 @@
       "type": "datetime",
       "required": true
     },
-    "action_link": {
+    "actionLink": {
       "type": "string",
       "private": false,
       "required": true

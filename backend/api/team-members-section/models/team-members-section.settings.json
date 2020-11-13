@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "introduction_section",
+  "collectionName": "team-members-section",
   "info": {
-    "name": "Sessäo Introdutória",
+    "name": "Seção de Membros ",
     "description": ""
   },
   "options": {
@@ -15,13 +15,12 @@
       "type": "string",
       "required": true
     },
-    "buttonText": {
-      "type": "string",
+    "text": {
+      "type": "text",
       "required": true
     },
-    "backgroundImageLink": {
-      "type": "string",
-      "required": true
+    "teamMembers": {
+      "collection": "team-member"
     }
   }
 }

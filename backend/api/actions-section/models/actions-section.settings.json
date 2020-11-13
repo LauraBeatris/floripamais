@@ -19,24 +19,24 @@
       "type": "text",
       "required": true
     },
-    "next_actions": {
+    "nextActions": {
       "collection": "actions"
     },
-    "previous_actions": {
+    "previousActions": {
       "collection": "actions"
     },
-    "action_button_text": {
+    "actionButtonText": {
       "type": "string",
       "required": true
     },
-    "no_actions_found_text": {
+    "noActionsFoundText": {
       "type": "string",
       "required": true
     },
-    "next_actions_subtitle": {
+    "nextActionsSubtitle": {
       "type": "string"
     },
-    "previous_actions_subtitle": {
+    "previousActionsSubtitle": {
       "type": "string"
     }
   }

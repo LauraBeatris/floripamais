@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/org-infos",
+      "handler": "org-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/org-infos/count",
+      "handler": "org-info.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/org-infos/:id",
+      "handler": "org-info.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/org-infos",
+      "handler": "org-info.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/org-infos/:id",
+      "handler": "org-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/org-infos/:id",
+      "handler": "org-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

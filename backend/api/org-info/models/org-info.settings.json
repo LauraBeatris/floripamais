@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "introduction_section",
+  "kind": "collectionType",
+  "collectionName": "org-info",
   "info": {
-    "name": "Sessäo Introdutória",
+    "name": "Informações da Org (Missão, Valores e Visão)",
     "description": ""
   },
   "options": {
@@ -15,11 +15,11 @@
       "type": "string",
       "required": true
     },
-    "buttonText": {
+    "text": {
       "type": "string",
       "required": true
     },
-    "backgroundImageLink": {
+    "emojiSymbol": {
       "type": "string",
       "required": true
     }
