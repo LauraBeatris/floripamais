@@ -15,7 +15,6 @@
 # :pushpin: Table of Contents
 
 * [Features](#rocket-features)
-* [UI Documentation](#framed_picture-ui-documentation)
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
 * [FAQ](#postbox-faq)
