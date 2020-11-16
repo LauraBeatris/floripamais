@@ -1,8 +1,6 @@
-<p align="left">
-   <img src=".github/docs/images/logo.png" width="100"/>
+<p align="center">
+   <img src=".github/docs/images/logo.png" width="500"/>
 </p>
-
-# Floripa+ Website
 
 > Website for the Floripa+ organization, with the goal to show current events, donations, and information.
 
