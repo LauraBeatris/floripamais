@@ -24,11 +24,11 @@
 
 # :rocket: Features
 
-* Totally customizable - with CMS
-* Show events
-* Show the team and their mission
+* Totally customizable with [CMS](https://github.com/LauraBeatris/floripamais-strapi-api)
+* Show actions
+* Show team
+* Show the mission, values, and vision of the organization
 * Transparency of current donations
-* Focus on SEO
 
 # :construction_worker: Installation
 
