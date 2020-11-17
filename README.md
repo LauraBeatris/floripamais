@@ -2,8 +2,6 @@
    <img src=".github/docs/images/logo.png" width="500"/>
 </p>
 
-> Website for the Floripa+ organization, with the goal to show current events, donations, and information.
-
 [![Author](https://img.shields.io/badge/author-LauraBeatris-FB8F0A?style=flat-square)](https://github.com/LauraBeatris)
 [![Languages](https://img.shields.io/github/languages/count/LauraBeatris/floripamais?color=%23FB8F0A&style=flat-square)](#)
 [![Stars](https://img.shields.io/github/stars/LauraBeatris/floripamais?color=FB8F0A&style=flat-square)](https://github.com/LauraBeatris/floripamais/stargazers)
