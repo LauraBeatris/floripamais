@@ -1,5 +1,5 @@
 <p align="center">
-   <img src=".github/docs/images/logo.png" width="500"/>
+   <img src=".github/docs/images/logo.png" width="400"/>
 </p>
 
 [![Author](https://img.shields.io/badge/author-LauraBeatris-FB8F0A?style=flat-square)](https://github.com/LauraBeatris)
