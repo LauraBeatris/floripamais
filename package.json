@@ -9,7 +9,7 @@
     "linter": "eslint ./pages --ext=.ts,.tsx",
     "check-types": "tsc --noemit",
     "lint": "yarn run linter && yarn run check-types",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate-types": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "a11y-react-emoji": "^1.1.2",
