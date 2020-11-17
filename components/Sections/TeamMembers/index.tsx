@@ -2,10 +2,10 @@ import React from "react";
 
 import TeamMembersSlider from "components/Slider/TeamMembersSlider";
 import Section from "components/Sections/Section";
+import { SectionVariant } from "components/Sections/Section/types";
 
 import { TeamMembersSectionProps } from "./types";
 import { teamMembersSectionFixtures, teamMembersSectionId } from "./constants";
-import { SectionVariant } from "../Section/types";
 
 const TeamMembersSection: React.FC<TeamMembersSectionProps> = ({
   text = teamMembersSectionFixtures.text,

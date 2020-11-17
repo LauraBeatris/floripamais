@@ -1,10 +1,6 @@
-<p align="left">
-   <img src=".github/docs/images/logo.png" width="100"/>
+<p align="center">
+   <img src=".github/docs/images/logo.png" width="500"/>
 </p>
-
-# Floripa+ Website
-
-> Website for the Floripa+ organization, with the goal to show current events, donations, and information.
 
 [![Author](https://img.shields.io/badge/author-LauraBeatris-FB8F0A?style=flat-square)](https://github.com/LauraBeatris)
 [![Languages](https://img.shields.io/github/languages/count/LauraBeatris/floripamais?color=%23FB8F0A&style=flat-square)](#)
@@ -17,7 +13,6 @@
 # :pushpin: Table of Contents
 
 * [Features](#rocket-features)
-* [UI Documentation](#framed_picture-ui-documentation)
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
 * [FAQ](#postbox-faq)
@@ -27,16 +22,11 @@
 
 # :rocket: Features
 
-* Totally customizable - with CMS
-* Show events
-* Show the team and their mission
+* Totally customizable with [CMS](https://github.com/LauraBeatris/floripamais-strapi-api)
+* Show actions
+* Show team
+* Show the mission, values, and vision of the organization
 * Transparency of current donations
-* Focus on SEO
-
-# :framed_picture: UI Documentation
-This project has a UI Documentation of reusable components, allowing to test them individually.
-
-(Coming Soon)
 
 # :construction_worker: Installation
 
@@ -66,14 +56,13 @@ yarn dev
 
 # :postbox: Faq
 
-**Question:** What are the tecnologies used in this project?
+**Question:** What are the technologies used in this project?
 
-**Answer:** The tecnologies used in this project are [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/).
+**Answer:** [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/).
 
 **Question** Why Next.js instead of other frameworks of React out there?
 
-**Answer** I chose Next.js because it's hybrid and I'm free to generate static pages and also perform SSR or CSR. I've decided to go with
-SSG on this website since it's a simple page without dynamic data and the SEO it's really important.
+**Answer** I chose Next.js because it has a hybrid architecture. This website has only one page and it's [statically generated](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) by fetching data from a headless (CMS)[https://github.com/LauraBeatris/floripamais-strapi-api].
 
 # :bug: Issues
 
@@ -85,7 +74,7 @@ Check out the [contributing](https://github.com/LauraBeatris/floripamais/blob/ma
 
 # :closed_book: License
 
-Released in 2020 (Work in progress)
+Released in 2020
 This project is under the [MIT license](https://github.com/LauraBeatris/floripamais/master/LICENSE).
 
 Made with love by [Laura Beatris](https://github.com/LauraBeatris) 💜🚀
