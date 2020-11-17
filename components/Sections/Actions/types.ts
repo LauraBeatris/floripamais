@@ -1,3 +1,3 @@
-import { GetActionsSectionQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type ActionsSectionProps = GetActionsSectionQuery["actionsSection"];
+export type ActionsSectionProps = GetMainPageSectionQuery["actionsSection"];

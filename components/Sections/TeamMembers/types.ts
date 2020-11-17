@@ -1,3 +1,3 @@
-import { GetTeamMembersSectionQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type TeamMembersSectionProps = GetTeamMembersSectionQuery["teamMembersSection"];
+export type TeamMembersSectionProps = GetMainPageSectionQuery["teamMembersSection"];

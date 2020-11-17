@@ -61,7 +61,7 @@ const MainPage: React.FC< InferGetStaticPropsType<typeof getStaticProps>> = ({
       <AchievementsSection {...achievementsSection} />
       <ActionsSection {...actionsSection} />
       <DonationsSection {...donationsSection} />
-      <MissionSection {...orgInfos} />
+      <MissionSection orgInfos={orgInfos} />
       <TeamMembersSection {...teamMembersSection} />
     </main>
     <Footer {...footer} />

@@ -1,6 +1,6 @@
-import { GetFooterQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type FooterProps = GetFooterQuery["footer"]
+export type FooterProps = GetMainPageSectionQuery["footer"]
 
 export interface FooterContentItemProps {
   title: string;

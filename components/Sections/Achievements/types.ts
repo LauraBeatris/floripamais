@@ -1,5 +1,5 @@
-import { Achievements, GetAchievementsSectionQuery } from "generated/graphql";
+import { Achievements, GetMainPageSectionQuery } from "generated/graphql";
 
 export type AchievementItemProps = Pick<Achievements, "value" | "label">;
 
-export type AchievementsSectionProps = GetAchievementsSectionQuery["achievementsSection"]
+export type AchievementsSectionProps = GetMainPageSectionQuery["achievementsSection"]

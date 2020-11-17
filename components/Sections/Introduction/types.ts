@@ -1,3 +1,3 @@
-import { GetIntroductionSectionQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type IntroductionSectionProps = GetIntroductionSectionQuery["introductionSection"];
+export type IntroductionSectionProps = GetMainPageSectionQuery["introductionSection"];
