@@ -58,14 +58,13 @@ yarn dev
 
 # :postbox: Faq
 
-**Question:** What are the tecnologies used in this project?
+**Question:** What are the technologies used in this project?
 
-**Answer:** The tecnologies used in this project are [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/).
+**Answer:** [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/).
 
 **Question** Why Next.js instead of other frameworks of React out there?
 
-**Answer** I chose Next.js because it's hybrid and I'm free to generate static pages and also perform SSR or CSR. I've decided to go with
-SSG on this website since it's a simple page without dynamic data and the SEO it's really important.
+**Answer** I chose Next.js because it has a hybrid architecture. This website has only one page and it's [statically generated](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) by fetching data from a headless (CMS)[https://github.com/LauraBeatris/floripamais-strapi-api].
 
 # :bug: Issues
 
