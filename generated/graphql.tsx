@@ -2049,103 +2049,47 @@ export enum CacheControlScope {
   Private = 'PRIVATE'
 }
 
-export type GetAchievementsSectionQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetMainPageSectionQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetAchievementsSectionQuery = (
+export type GetMainPageSectionQuery = (
   { __typename?: 'Query' }
-  & { achievementsSection: Maybe<(
+  & { introductionSection: Maybe<(
+    { __typename?: 'IntroductionSection' }
+    & Pick<IntroductionSection, 'id' | 'title' | 'buttonText' | 'backgroundImageLink'>
+  )>, achievementsSection: Maybe<(
     { __typename?: 'AchievementsSection' }
     & Pick<AchievementsSection, 'id' | 'title'>
     & { achievements: Maybe<Array<Maybe<(
       { __typename?: 'Achievements' }
       & Pick<Achievements, 'id' | 'label' | 'value'>
     )>>> }
-  )> }
-);
-
-export type ActionFieldsFragment = (
-  { __typename?: 'Actions' }
-  & Pick<Actions, 'id' | 'name' | 'date' | 'description' | 'actionLink'>
-);
-
-export type GetActionsSectionQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetActionsSectionQuery = (
-  { __typename?: 'Query' }
-  & { actionsSection: Maybe<(
-    { __typename?: 'ActionsSection' }
-    & Pick<ActionsSection, 'id' | 'text' | 'title' | 'actionButtonText' | 'nextActionsSubtitle' | 'noActionsFoundText' | 'previousActionsSubtitle'>
-    & { nextActions: Maybe<Array<Maybe<(
-      { __typename?: 'Actions' }
-      & ActionFieldsFragment
-    )>>>, previousActions: Maybe<Array<Maybe<(
-      { __typename?: 'Actions' }
-      & ActionFieldsFragment
-    )>>> }
-  )> }
-);
-
-export type GetDonationsSectionQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetDonationsSectionQuery = (
-  { __typename?: 'Query' }
-  & { donationsSection: Maybe<(
+  )>, donationsSection: Maybe<(
     { __typename?: 'DonationsSection' }
     & Pick<DonationsSection, 'id' | 'text' | 'title' | 'sheetLink' | 'buttonText' | 'emojiSymbol'>
-  )> }
-);
-
-export type GetFooterQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetFooterQuery = (
-  { __typename?: 'Query' }
-  & { footer: Maybe<(
-    { __typename?: 'Footer' }
-    & Pick<Footer, 'id' | 'contactEmail' | 'socialMediasTitle' | 'contactEmailTitle'>
-    & { socialMedias: Maybe<Array<Maybe<(
-      { __typename?: 'SocialMedias' }
-      & Pick<SocialMedias, 'id' | 'label' | 'href'>
+  )>, actionsSection: Maybe<(
+    { __typename?: 'ActionsSection' }
+    & Pick<ActionsSection, 'id' | 'text' | 'title' | 'actionButtonText' | 'nextActionsSubtitle' | 'previousActionsSubtitle'>
+    & { nextActions: Maybe<Array<Maybe<(
+      { __typename?: 'Actions' }
+      & Pick<Actions, 'id' | 'name' | 'date' | 'description' | 'actionLink'>
     )>>> }
-  )> }
-);
-
-export type GetIntroductionSectionQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetIntroductionSectionQuery = (
-  { __typename?: 'Query' }
-  & { introductionSection: Maybe<(
-    { __typename?: 'IntroductionSection' }
-    & Pick<IntroductionSection, 'id' | 'title' | 'buttonText' | 'backgroundImageLink'>
-  )> }
-);
-
-export type GetOrgInfosQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetOrgInfosQuery = (
-  { __typename?: 'Query' }
-  & { orgInfos: Maybe<Array<Maybe<(
+  )>, orgInfos: Maybe<Array<Maybe<(
     { __typename?: 'OrgInfo' }
     & Pick<OrgInfo, 'id' | 'text' | 'title' | 'emojiSymbol'>
-  )>>> }
-);
-
-export type GetTeamMembersSectionQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type GetTeamMembersSectionQuery = (
-  { __typename?: 'Query' }
-  & { teamMembersSection: Maybe<(
+  )>>>, teamMembersSection: Maybe<(
     { __typename?: 'TeamMembersSection' }
     & Pick<TeamMembersSection, 'id' | 'text' | 'title'>
     & { teamMembers: Maybe<Array<Maybe<(
       { __typename?: 'TeamMember' }
       & Pick<TeamMember, 'id' | 'name' | 'photoUrl'>
+    )>>> }
+  )>, footer: Maybe<(
+    { __typename?: 'Footer' }
+    & Pick<Footer, 'id' | 'contactEmail' | 'socialMediasTitle' | 'contactEmailTitle'>
+    & { socialMedias: Maybe<Array<Maybe<(
+      { __typename?: 'SocialMedias' }
+      & Pick<SocialMedias, 'id' | 'label' | 'href'>
     )>>> }
   )> }
 );

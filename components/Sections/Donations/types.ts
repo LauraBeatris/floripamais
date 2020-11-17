@@ -1,4 +1,4 @@
-import { GetDonationsSectionQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type DonationsSectionProps = GetDonationsSectionQuery["donationsSection"];
+export type DonationsSectionProps = GetMainPageSectionQuery["donationsSection"];
 

@@ -1,3 +1,5 @@
-import { GetOrgInfosQuery } from "generated/graphql";
+import { GetMainPageSectionQuery } from "generated/graphql";
 
-export type OrgInfoSectionProps = GetOrgInfosQuery
+export interface OrgInfoSectionProps {
+  orgInfos: GetMainPageSectionQuery["orgInfos"];
+}
