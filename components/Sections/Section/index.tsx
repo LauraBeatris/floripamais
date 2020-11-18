@@ -4,9 +4,9 @@ import Emoji from "a11y-react-emoji";
 
 import Touchable from "components/Touchable";
 import MaxWidthContainer from "components/MaxWidthContainer";
+import { BackgroundVariant, backgroundVariantsStyles } from "styles/variants";
 
-import { SectionProps, SectionVariant } from "./types";
-import { sectionStyles, sectionVariantsStyles } from "./styles";
+import { SectionProps } from "./types";
 
 const Section: React.FC<SectionProps> = ({
   emojiSymbol,
@@ -14,15 +14,15 @@ const Section: React.FC<SectionProps> = ({
   touchableHref,
   className,
   children,
-  variant = SectionVariant.Secondary,
+  variant = BackgroundVariant.Secondary,
   title,
   text,
   ...rest
 }) => {
   const concatenateSectionClassName = clsx(
     className,
-    sectionStyles.container,
-    sectionVariantsStyles[variant],
+    "text-center w-full py-16 px-5 md:px-20",
+    backgroundVariantsStyles[variant],
   );
 
   return (

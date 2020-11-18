@@ -1,7 +1,7 @@
 import React from "react";
 
 import Section from "components/Sections/Section";
-import { SectionVariant } from "components/Sections/Section/types";
+import { BackgroundVariant } from "styles/variants";
 
 import { orgInfoSectionFixtures, orgInfoId } from "./constants";
 import { OrgInfoSectionProps } from "./types";
@@ -17,7 +17,7 @@ const OrgInfoSection: React.FC<OrgInfoSectionProps> = ({ orgInfos = orgInfoSecti
           key={title}
           text={text}
           title={title}
-          variant={SectionVariant.Primary}
+          variant={BackgroundVariant.Primary}
           emojiSymbol={emojiSymbol}
           className="pt-0 first:pt-16"
         />

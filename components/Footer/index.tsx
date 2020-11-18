@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 
 import MaxWidthContainer from "components/MaxWidthContainer";
+import { BackgroundVariant, backgroundVariantsStyles } from "styles/variants";
 
 import { FooterProps, FooterContentItemProps } from "./types";
 import { footerFixtures, footerId } from "./constants";
@@ -19,9 +20,14 @@ const FooterContentItem: React.FC<FooterContentItemProps> = ({
   </div>
 );
 
-const subtitleClassName = "break-words text-white max-w-full";
+const subtitleClassName = "break-words max-w-full";
 
 const borderSubtitleClassName = "hover:border-b-2 border-white";
+
+const concatenateFooterClassName = clsx(
+  "mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32",
+  backgroundVariantsStyles[BackgroundVariant.Primary],
+);
 
 const Footer: React.FC<FooterProps> = ({
   socialMediasTitle = footerFixtures.socialMediasTitle,
@@ -38,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <footer
       id={footerId}
-      className="mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32"
+      className={concatenateFooterClassName}
     >
       <MaxWidthContainer className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <FooterContentItem title={socialMediasTitle}>

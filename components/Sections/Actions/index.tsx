@@ -2,9 +2,9 @@ import React from "react";
 
 import Section from "components/Sections/Section";
 import ScrollLink from "components/ScrollLink";
-import { SectionVariant } from "components/Sections/Section/types";
-import { footerId } from "components/Footer/constants";
 import ActionsSlider from "components/Slider/ActionsSlider";
+import { BackgroundVariant } from "styles/variants";
+import { footerId } from "components/Footer/constants";
 
 import { ActionsSectionProps } from "./types";
 import { actionsSectionFixtures, actionsSectionId } from "./constants";
@@ -26,7 +26,7 @@ const ActionsSection: React.FC<ActionsSectionProps> = ({
       id={actionsSectionId}
       text={text}
       title={title}
-      variant={SectionVariant.Primary}
+      variant={BackgroundVariant.Primary}
     >
       <div className="my-16">
         <h2 className="text-left text-2xl text-black font-semibold mt-16 mb-10">
