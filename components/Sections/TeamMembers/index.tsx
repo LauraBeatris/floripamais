@@ -2,7 +2,7 @@ import React from "react";
 
 import TeamMembersSlider from "components/Slider/TeamMembersSlider";
 import Section from "components/Sections/Section";
-import { SectionVariant } from "components/Sections/Section/types";
+import { BackgroundVariant } from "styles/variants";
 
 import { TeamMembersSectionProps } from "./types";
 import { teamMembersSectionFixtures, teamMembersSectionId } from "./constants";
@@ -16,7 +16,7 @@ const TeamMembersSection: React.FC<TeamMembersSectionProps> = ({
     id={teamMembersSectionId}
     text={text}
     title={title}
-    variant={SectionVariant.Primary}
+    variant={BackgroundVariant.Secondary}
   >
     <div className="w-full mt-12">
       <TeamMembersSlider teamMembers={teamMembers} />

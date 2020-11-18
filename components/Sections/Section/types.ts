@@ -1,15 +1,12 @@
 import { HTMLAttributes } from "react";
 
-export enum SectionVariant {
-  Primary,
-  Secondary
-}
+import { BackgroundVariant } from "styles/variants";
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   emojiSymbol?: string;
   buttonText?: string;
   touchableHref?: string;
-  variant?: SectionVariant;
+  variant?: BackgroundVariant;
   title: string;
   text: string;
 }
