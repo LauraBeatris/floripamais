@@ -24,6 +24,11 @@ const subtitleClassName = "break-words max-w-full";
 
 const borderSubtitleClassName = "hover:border-b-2 border-white";
 
+const concatenateFooterClassName = clsx(
+  "mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32",
+  backgroundVariantsStyles[BackgroundVariant.Primary],
+);
+
 const Footer: React.FC<FooterProps> = ({
   socialMediasTitle = footerFixtures.socialMediasTitle,
   contactEmailTitle = footerFixtures.contactEmailTitle,
@@ -35,11 +40,6 @@ const Footer: React.FC<FooterProps> = ({
   const socialMediaLinkClasses = clsx(subtitleClassName, "footer-social-media-link");
 
   const contactLinkClasses = clsx(subtitleClassName, borderSubtitleClassName);
-
-  const concatenateFooterClassName = clsx(
-    "mt-auto w-screen bg-black py-10 px-5 md:py-16 md:px-32",
-    backgroundVariantsStyles[BackgroundVariant.Primary],
-  );
 
   return (
     <footer
