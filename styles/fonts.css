@@ -1,4 +1,4 @@
-/* montserrat-300 - latin */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -13,7 +13,7 @@
     url("/fonts/montserrat-v15-latin-300.ttf") format("truetype"),
     url("/fonts/montserrat-v15-latin-300.svg#Montserrat") format("svg");
 }
-/* montserrat-500 - latin */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -28,7 +28,7 @@
     url("/fonts/montserrat-v15-latin-500.ttf") format("truetype"),
     url("/fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
 }
-/* montserrat-600 - latin */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
