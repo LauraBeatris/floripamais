@@ -14,7 +14,7 @@ class MyDocument extends Document {
             rel="preload"
             href="/fonts/montserrat-v15-latin-600.woff2"
             as="font"
-            crossOrigin=""
+            crossorigin="anonymous"
           />
           <meta title="Floripa+ | Torne a ilha em um lugar melhor" />
           <meta name="theme-color" content="#FFFFFF" />
