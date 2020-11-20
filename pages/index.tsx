@@ -56,14 +56,12 @@ const MainPage: React.FC< InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Head>
       <title>Floripa+ | Torne a ilha em um lugar melhor</title>
     </Head>
-    <main id="page-wrapper" className="pt-header-mobile md:pt-header-desktop flex flex-col justify-start bg-white-shade">
-      <IntroductionSection {...introductionSection} />
-      <AchievementsSection {...achievementsSection} />
-      <ActionsSection {...actionsSection} />
-      <DonationsSection {...donationsSection} />
-      <MissionSection orgInfos={orgInfos} />
-      <TeamMembersSection {...teamMembersSection} />
-    </main>
+    <IntroductionSection {...introductionSection} />
+    <AchievementsSection {...achievementsSection} />
+    <ActionsSection {...actionsSection} />
+    <DonationsSection {...donationsSection} />
+    <MissionSection orgInfos={orgInfos} />
+    <TeamMembersSection {...teamMembersSection} />
     <Footer {...footer} />
   </>
 );
