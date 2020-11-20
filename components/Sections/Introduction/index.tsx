@@ -16,7 +16,7 @@ const IntroductionSection: React.FC<IntroductionSectionProps> = ({
 }) => (
   <section
     id={introductionSectionId}
-    className="flex items-center py-10 px-5 md:p-20 relative h-full-screen-mobile md:h-full-screen-desktop bg-white"
+    className="flex items-center py-10 px-5 md:p-20 relative h-mobile-screen md:h-desktop-screen bg-white"
   >
     <Image
       src={backgroundImageLink}

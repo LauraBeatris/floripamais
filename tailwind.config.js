@@ -39,8 +39,8 @@ module.exports = {
       },
       height: {
         ...reuseComponentsLengths,
-        "full-screen-desktop": `calc(100vh - ${reuseComponentsLengths["header-desktop"]})`,
-        "full-screen-mobile": `calc(100vh - ${reuseComponentsLengths["header-mobile"]})`,
+        "desktop-screen": `calc(100vh - ${reuseComponentsLengths["header-desktop"]})`,
+        "mobile-screen": `calc(100vh - ${reuseComponentsLengths["header-mobile"]})`,
       },
       width: {
         22: "22rem",
