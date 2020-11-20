@@ -8,7 +8,7 @@ const Page404: React.FC = () => (
       {" "}
       <Link href="/"><span className="text-orange-200 cursor-pointer hover:underline">aqui</span></Link>
       {" "}
-      e vá para a pagina principal
+      e vá para a página principal
     </h1>
   </div>
 );
