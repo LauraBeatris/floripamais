@@ -62,7 +62,7 @@ yarn dev
 
 **Question** Why Next.js instead of other frameworks of React out there?
 
-**Answer** I chose Next.js because it has a hybrid architecture. This website has only one page and it's [statically generated](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) by fetching data from a headless (CMS)[https://github.com/LauraBeatris/floripamais-strapi-api].
+**Answer** I chose Next.js because it has a hybrid architecture. This website has only one page and it's [statically generated](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) by fetching data from a headless [CMS](https://github.com/LauraBeatris/floripamais-strapi-api).
 
 # :bug: Issues
 
