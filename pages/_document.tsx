@@ -10,6 +10,18 @@ class MyDocument extends Document {
     return (
       <Html lang="pt" className="antialiased p-0 mx-0 outline-none box-border">
         <Head>
+          <link
+            rel="preload"
+            href="/fonts/montserrat-v15-latin-600.woff2"
+            as="font"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/montserrat-v15-latin-300.woff2"
+            as="font"
+            crossOrigin="anonymous"
+          />
           <meta title="Floripa+ | Torne a ilha em um lugar melhor" />
           <meta name="theme-color" content="#FFFFFF" />
           <link rel="manifest" href="/manifest.json" />
