@@ -3,6 +3,7 @@ import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 
 import "styles/main.css";
+import "styles/fonts.css";
 
 import ContextProviders from "contexts";
 import seoConfig from "config/seo";
