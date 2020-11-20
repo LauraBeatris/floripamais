@@ -2,6 +2,13 @@
    <img src=".github/docs/images/logo.png" width="350"/>
 </p>
 
+<br />
+
+<p align="center">
+   <img src=".github/docs/images/desktop-introduction.png" width="400" style="margin-right: 10px; margin-bottom: 5rem"/>
+   <img src=".github/docs/images/mobile-introduction.png" width="200"/>
+</p>
+
 [![Author](https://img.shields.io/badge/author-LauraBeatris-FB8F0A?style=flat-square)](https://github.com/LauraBeatris)
 [![Languages](https://img.shields.io/github/languages/count/LauraBeatris/floripamais?color=%23FB8F0A&style=flat-square)](#)
 [![Stars](https://img.shields.io/github/stars/LauraBeatris/floripamais?color=FB8F0A&style=flat-square)](https://github.com/LauraBeatris/floripamais/stargazers)
