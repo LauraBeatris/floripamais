@@ -35,7 +35,7 @@
   font-weight: 600;
   font-display: swap;
   src: url("/fonts/montserrat-v15-latin-600.eot");
-  src: local(""),
+  src: local("Montserrat"),
     url("/fonts/montserrat-v15-latin-600.eot?#iefix")
       format("embedded-opentype"),
     url("/fonts/montserrat-v15-latin-600.woff2") format("woff2"),
