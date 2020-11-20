@@ -1,6 +1,6 @@
 {
   "src/**/*.{ts,tsx}": [
-    "yarn linter",
+    "yarn lint-code-style",
     "git add"
   ]
 }

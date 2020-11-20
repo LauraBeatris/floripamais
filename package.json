@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "linter": "eslint ./pages --ext=.ts,.tsx",
-    "check-types": "tsc --noemit",
-    "lint": "yarn run linter && yarn run check-types",
+    "lint-code-style": "eslint ./pages --ext=.ts,.tsx",
+    "lint-check-types": "tsc --noemit",
+    "linter": "yarn lint-code-style && yarn lint-check-types",
     "generate-types": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
