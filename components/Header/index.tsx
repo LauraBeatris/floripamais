@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { HideAt, ShowAt } from "react-with-breakpoints";
 
 import MaxWidthContainer from "components/MaxWidthContainer";
 import ScrollLink from "components/ScrollLink";
+import { introductionSectionId } from "components/Sections/Introduction/constants";
 
 import MobileNavbar from "./MobileNavbar";
 import { headerId, headerNavbarLinks } from "./constants";
@@ -14,16 +16,20 @@ const Header: React.FC = () => (
     className="bg-black w-screen z-30 fixed flex items-center justify-between py-4 px-8 h-header-mobile md:h-header-desktop"
   >
     <MaxWidthContainer className="flex items-center w-full justify-between">
-      <div className="md:h-20 md:w-20 w-10 h-10 relative">
-        <Image
-          quality={100}
-          title="Floripa+"
-          src="/images/logo.png"
-          alt="Floripa Mais Logo"
-          loading="eager"
-          layout="fill"
-        />
-      </div>
+      <ScrollLink to={introductionSectionId}>
+        <Link href="/">
+          <div className="md:h-20 md:w-20 w-10 h-10 relative">
+            <Image
+              quality={100}
+              title="Floripa+"
+              src="/images/logo.png"
+              alt="Floripa Mais Logo"
+              loading="eager"
+              layout="fill"
+            />
+          </div>
+        </Link>
+      </ScrollLink>
 
       <HideAt breakpoint="small">
         <nav>

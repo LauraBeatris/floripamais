@@ -17,7 +17,9 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
     <DefaultSeo {...seoConfig} />
     <ContextProviders>
       <Header />
-      <Component {...pageProps} />
+      <main id="page-wrapper" className="pt-header-mobile md:pt-header-desktop flex flex-col justify-start bg-white-shade">
+        <Component {...pageProps} />
+      </main>
     </ContextProviders>
   </>
 );
