@@ -28,7 +28,7 @@
 
 .truncate-multiple-lines {
   --line-height: 1.2em;
-                             overflow: hidden;
+  overflow: hidden;
   position: relative;
   line-height: var(--line-height);
   max-height: calc(var(--line-height) * 6);
