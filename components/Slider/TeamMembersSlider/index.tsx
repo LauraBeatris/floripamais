@@ -9,6 +9,7 @@ const TeamMembersSlider: React.FC<TeamMembersSliderProps> = ({
   teamMembers,
 }) => (
   <Slider
+    pauseOnFocus={false}
     pauseOnHover={false}
     autoplay
     arrows={false}
