@@ -9,6 +9,7 @@ import ActionsSection from "components/Sections/Actions";
 import TeamMembersSection from "components/Sections/TeamMembers";
 import Footer from "components/Footer";
 import getMainPageContent from "queries/getMainPageContentQuery";
+import ScrollTopButton from "components/ScrollTopButton";
 
 export const getStaticProps = async () => {
   try {
@@ -63,6 +64,7 @@ const MainPage: React.FC< InferGetStaticPropsType<typeof getStaticProps>> = ({
     <MissionSection orgInfos={orgInfos} />
     <TeamMembersSection {...teamMembersSection} />
     <Footer {...footer} />
+    <ScrollTopButton />
   </>
 );
 
