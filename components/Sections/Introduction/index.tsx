@@ -29,7 +29,6 @@ const IntroductionSection: React.FC<IntroductionSectionProps> = ({
           alt="Florianópolis"
           className="absolute z-10 object-cover object-center h-full w-full"
           layout="fill"
-          priority
           quality={100}
           loading="eager"
         />
