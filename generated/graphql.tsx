@@ -265,20 +265,11 @@ export type ActionsSection = {
   nextActionsSubtitle: Maybe<Scalars['String']>;
   previousActionsSubtitle: Maybe<Scalars['String']>;
   published_at: Maybe<Scalars['DateTime']>;
-  nextActions: Maybe<Array<Maybe<Actions>>>;
-  previousActions: Maybe<Array<Maybe<Actions>>>;
+  actions: Maybe<Array<Maybe<Actions>>>;
 };
 
 
-export type ActionsSectionNextActionsArgs = {
-  sort: Maybe<Scalars['String']>;
-  limit: Maybe<Scalars['Int']>;
-  start: Maybe<Scalars['Int']>;
-  where: Maybe<Scalars['JSON']>;
-};
-
-
-export type ActionsSectionPreviousActionsArgs = {
+export type ActionsSectionActionsArgs = {
   sort: Maybe<Scalars['String']>;
   limit: Maybe<Scalars['Int']>;
   start: Maybe<Scalars['Int']>;
@@ -288,8 +279,7 @@ export type ActionsSectionPreviousActionsArgs = {
 export type ActionsSectionInput = {
   title: Scalars['String'];
   text: Scalars['String'];
-  nextActions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  previousActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  actions: Maybe<Array<Maybe<Scalars['ID']>>>;
   actionButtonText: Scalars['String'];
   noActionsFoundText: Scalars['String'];
   nextActionsSubtitle: Maybe<Scalars['String']>;
@@ -302,8 +292,7 @@ export type ActionsSectionInput = {
 export type EditActionsSectionInput = {
   title: Maybe<Scalars['String']>;
   text: Maybe<Scalars['String']>;
-  nextActions: Maybe<Array<Maybe<Scalars['ID']>>>;
-  previousActions: Maybe<Array<Maybe<Scalars['ID']>>>;
+  actions: Maybe<Array<Maybe<Scalars['ID']>>>;
   actionButtonText: Maybe<Scalars['String']>;
   noActionsFoundText: Maybe<Scalars['String']>;
   nextActionsSubtitle: Maybe<Scalars['String']>;
@@ -2070,7 +2059,7 @@ export type GetMainPageSectionQuery = (
   )>, actionsSection: Maybe<(
     { __typename?: 'ActionsSection' }
     & Pick<ActionsSection, 'id' | 'text' | 'title' | 'actionButtonText' | 'nextActionsSubtitle' | 'previousActionsSubtitle'>
-    & { nextActions: Maybe<Array<Maybe<(
+    & { actions: Maybe<Array<Maybe<(
       { __typename?: 'Actions' }
       & Pick<Actions, 'id' | 'name' | 'date' | 'description' | 'actionLink'>
     )>>> }
