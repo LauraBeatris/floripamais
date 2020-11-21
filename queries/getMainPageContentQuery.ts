@@ -33,7 +33,7 @@ const donationsSectionQuery = gql`
       id
       text
       title
-      nextActions {
+      actions {
         id
         name
         date
