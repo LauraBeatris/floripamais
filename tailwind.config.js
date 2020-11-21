@@ -52,6 +52,9 @@ module.exports = {
       minHeight: {
         "slider-item": "24rem",
       },
+      inset: {
+        2: "2rem",
+      },
     },
     fontFamily: {
       body: ["Montserrat", "Arial", "sans-serif"],
