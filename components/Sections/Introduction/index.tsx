@@ -12,7 +12,6 @@ import { IntroductionSectionProps } from "./types";
 import { introductionSectionId, introductionSectionFixtures } from "./constants";
 
 const IntroductionSection: React.FC<IntroductionSectionProps> = ({
-  backgroundImageLink = introductionSectionFixtures.backgroundImageLink,
   buttonText = introductionSectionFixtures.buttonText,
   title = introductionSectionFixtures.title,
 }) => {
@@ -26,7 +25,7 @@ const IntroductionSection: React.FC<IntroductionSectionProps> = ({
         className="flex items-center py-10 px-5 md:p-20 relative h-mobile-screen md:h-desktop-screen bg-white"
       >
         <Image
-          src={backgroundImageLink}
+          src="/images/introduction-section-background.jpeg"
           alt="Florianópolis"
           className="absolute z-10 object-cover object-center h-full w-full"
           layout="fill"

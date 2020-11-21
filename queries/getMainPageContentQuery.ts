@@ -10,7 +10,6 @@ const donationsSectionQuery = gql`
       id
       title
       buttonText
-      backgroundImageLink
     }
     achievementsSection {
       id
