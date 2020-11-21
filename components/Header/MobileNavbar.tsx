@@ -63,10 +63,8 @@ const NavbarMobile: React.FC = () => {
             <motion.nav
               key="navbar"
               ref={navElementRef}
-              exit={navbarMotionStyles.exit}
-              initial={navbarMotionStyles.initial}
-              animate={navbarMotionStyles.animate}
               className="flex flex-col w-64 p-5 h-screen fixed bg-gray-900"
+              {...navbarMotionStyles}
             >
               <header className="w-full flex justify-end">
                 <button
