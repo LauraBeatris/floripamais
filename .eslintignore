@@ -7,8 +7,5 @@ node_modules/
 # Build Output
 out/
 
-# Backend
-backend
-
 # Generated Types from GraphQL schema
 generated
