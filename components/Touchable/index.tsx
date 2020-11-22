@@ -37,24 +37,26 @@ const Touchable: React.FC<TouchableProps> = ({
   return (
     <div className={concatenateTouchableWrapperClassNames}>
       <div className={styles.container}>
-        {touchableHref ? (
-          <a
-            target="_blank"
-            href={touchableHref}
-            rel="noreferrer"
-            {...touchableAttributes}
-          >
-            {touchableContent}
-          </a>
-        ) : (
-          <button
-            type="button"
-            {...touchableAttributes}
-            {...rest}
-          >
-            {touchableContent}
-          </button>
-        )}
+        {
+          touchableHref ? (
+            <a
+              target="_blank"
+              href={touchableHref}
+              rel="noreferrer"
+              {...touchableAttributes}
+            >
+              {touchableContent}
+            </a>
+          ) : (
+            <button
+              type="button"
+              {...touchableAttributes}
+              {...rest}
+            >
+              {touchableContent}
+            </button>
+          )
+        }
       </div>
     </div>
   );

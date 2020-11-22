@@ -31,13 +31,15 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({
       </h1>
 
       <div className="mt-5 w-full grid grid-cols-2 gap-x-5">
-        {achievements.map(achievement => (
-          <AchievementItem
-            key={achievement.label}
-            label={achievement.label}
-            value={achievement.value}
-          />
-        ))}
+        {
+          achievements.map(achievement => (
+            <AchievementItem
+              key={achievement.label}
+              label={achievement.label}
+              value={achievement.value}
+            />
+          ))
+        }
       </div>
     </MaxWidthContainer>
   </section>
