@@ -54,6 +54,7 @@ module.exports = {
       },
       inset: {
         2: "2rem",
+        "1/2": "0.5rem",
       },
     },
     fontFamily: {
