@@ -20,12 +20,11 @@ const Header: React.FC = () => (
         <Link href="/">
           <div className="md:h-20 md:w-20 w-10 h-10 relative">
             <Image
-              quality={100}
-              title="Floripa+"
               src="/images/logo.png"
               alt="Floripa Mais Logo"
-              loading="eager"
+              title="Floripa+"
               layout="fill"
+              loading="eager"
             />
           </div>
         </Link>
