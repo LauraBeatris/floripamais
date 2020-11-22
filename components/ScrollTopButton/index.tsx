@@ -20,7 +20,7 @@ const buttonMotionStyles = {
 };
 
 const ScrollTopButton: React.FC<ScrollTopButtonProps> = ({ isVisible }) => (
-  <ScrollLink to={introductionSectionId} className="fixed bottom-2 right-2 z-10">
+  <ScrollLink to={introductionSectionId} className="fixed bottom-1/2 right-1/2 lg:bottom-2 lg:right-2 z-10">
     <AnimatePresence>
       {
         isVisible && (
