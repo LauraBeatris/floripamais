@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint-code-style": "eslint ./pages --ext=.ts,.tsx",
+    "lint-code-style": "eslint . --ext=.ts,.tsx",
     "lint-check-types": "tsc --noemit",
     "linter": "yarn lint-code-style && yarn lint-check-types",
     "generate-types": "graphql-codegen --config codegen.yml"
