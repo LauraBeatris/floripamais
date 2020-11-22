@@ -12,13 +12,13 @@ const Touchable: React.FC<TouchableProps> = ({
   children,
   ...rest
 }) => {
-  const concatenateButtonElementClassNames = clsx(
+  const concatenateTouchableElementClassNames = clsx(
     styles.element,
     styles.elementAnimation,
     touchableElementClassName,
   );
 
-  const concatenateButtonWrapperClassNames = clsx(
+  const concatenateTouchableWrapperClassNames = clsx(
     styles.wrapper,
     touchableWrapperClassName,
   );
@@ -31,11 +31,11 @@ const Touchable: React.FC<TouchableProps> = ({
   );
 
   const touchableAttributes = {
-    className: concatenateButtonElementClassNames,
+    className: concatenateTouchableElementClassNames,
   };
 
   return (
-    <div className={concatenateButtonWrapperClassNames}>
+    <div className={concatenateTouchableWrapperClassNames}>
       <div className={styles.container}>
         {touchableHref ? (
           <a
