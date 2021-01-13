@@ -14,7 +14,7 @@ This project is MIT-licensed, and this means that you can implement and use what
 
 ## Code Style
 
-[Husky](https://github.com/typicode/husky) execute scrips according to git hooks in order to test if a developer is following the [Eslint Lint Rules](https://github.com/LauraBeatris/gobarber-web/blob/master/.eslintrc.js).
+[Husky](https://github.com/typicode/husky) execute scrips according to git hooks in order to test if a developer is following the [Eslint Lint Rules](https://github.com/LauraBeatris/floripa-mais/blob/master/.eslintrc.js).
 
 ## Bug reports
 
