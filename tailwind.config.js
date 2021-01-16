@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { shade } = require("polished");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const purgeExtensions = "*.{js,ts,jsx,tsx}";
 
@@ -58,7 +59,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Montserrat", "Arial", "sans-serif"],
+      body: ["Inter", ...fontFamily.sans],
     },
   },
   plugins: [],
