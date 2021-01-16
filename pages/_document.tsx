@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
+            type="font/woff2"
             href="/fonts/montserrat-v15-latin-600.woff2"
             as="font"
             crossOrigin="anonymous"
@@ -20,6 +21,7 @@ class MyDocument extends Document {
             rel="preload"
             href="/fonts/montserrat-v15-latin-300.woff2"
             as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <meta title="Floripa+ | Torne a ilha em um lugar melhor" />
