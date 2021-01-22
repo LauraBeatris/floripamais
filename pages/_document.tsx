@@ -6,7 +6,7 @@ import Document, {
 } from "next/document";
 
 class MyDocument extends Document {
-  render(): JSX.Element {
+  render() {
     return (
       <Html lang="pt" className="antialiased p-0 mx-0 outline-none box-border">
         <Head>
