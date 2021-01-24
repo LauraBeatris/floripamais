@@ -43,7 +43,7 @@ export const getStaticProps = async () => {
   }
 };
 
-const MainPage: React.FC< InferGetStaticPropsType<typeof getStaticProps>> = ({
+const MainPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footer,
   orgInfos,
   actionsSection,
