@@ -1,7 +1,7 @@
 import React from "react";
 import { BreakpointsProvider } from "react-with-breakpoints";
 
-import useHasMounted from "hooks/useIsMounted";
+import useHasMounted from "hooks/useHasMounted";
 import { tailwindBreakpoints } from "styles/tailwind";
 
 const TailwindBreakpointsProvider: React.FC = ({ children }) => {
@@ -12,7 +12,7 @@ const TailwindBreakpointsProvider: React.FC = ({ children }) => {
   }
 
   return (
-    <BreakpointsProvider breakpoints={tailwindBreakpoints}>
+    <BreakpointsProvider breakpoints={tailwindBreakpoints}>git
       {children}
     </BreakpointsProvider>
   );
