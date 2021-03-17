@@ -12,7 +12,7 @@ const TailwindBreakpointsProvider: React.FC = ({ children }) => {
   }
 
   return (
-    <BreakpointsProvider breakpoints={tailwindBreakpoints}>git
+    <BreakpointsProvider breakpoints={tailwindBreakpoints}>
       {children}
     </BreakpointsProvider>
   );
