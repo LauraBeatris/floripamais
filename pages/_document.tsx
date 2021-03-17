@@ -16,14 +16,14 @@ class MyDocument extends Document {
             as="font"
             crossOrigin="anonymous"
           />
-          <meta title="Floripa+ | Torne a ilha em um lugar melhor" />
+          <meta title="Floripa+ | Transforme a ilha em um lugar melhor" />
           <meta name="theme-color" content="#FFFFFF" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/favicons/favicon.ico" />
           <meta name="application-name" content="&nbsp;" />
           <meta name="msapplication-TileColor" content="#FFFFFF" />
           <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
-          <meta name="description" content="Torne a ilha em um lugar melhor" />
+          <meta name="description" content="Transforme a ilha em um lugar melhor" />
           <meta name="msapplication-square70x70logo" content="/favicons/mstile-70x70.png" />
           <meta name="msapplication-wide310x150logo" content="/favicons/mstile-310x150.png" />
           <meta name="msapplication-square310x310logo" content="/favicons/mstile-310x310.png" />

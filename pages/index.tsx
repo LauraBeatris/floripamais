@@ -54,7 +54,7 @@ const MainPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 }) => (
   <>
     <Head>
-      <title>Floripa+ | Torne a ilha em um lugar melhor</title>
+      <title>Floripa+ | Transforme a ilha em um lugar melhor</title>
     </Head>
     <IntroductionSection {...introductionSection} />
     <AchievementsSection {...achievementsSection} />
